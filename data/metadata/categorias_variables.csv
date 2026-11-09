@@ -1,0 +1,45 @@
+﻿variable,codigo,etiqueta,frecuencia
+cmasi,1.0,No matriculado,23864
+cmasi,2.0,Asiste,13576
+cmasi,,,2000
+cmasi,3.0,No asiste,45
+s03a_04,2.0,2. No,23864
+s03a_04,1.0,1. Si,13621
+s03a_04,,,2000
+s03b_10,,,25864
+s03b_10,1.0,"1. Sí, presencial",7072
+s03b_10,4.0,4. No,6282
+s03b_10,3.0,"3. Sí, a distancia o virtual (clases virtuales por internet, por radio, televisión, otros)",134
+s03b_10,2.0,"2. Sí, semipresencial (presencial y a distancia)",133
+s03a_05,,,15621
+s03a_05,6.0,6. POR TRABAJO O POR AYUDAR EN EL NEGOCIO/ ACTIVIDAD DE MI FAMILIA,13143
+s03a_05,7.0,7. NO LE CORRESPONDE POR SU EDAD,4355
+s03a_05,4.0,4. POR REALIZAR LABORES DE CASA/CUIDADO DE NIÑOS/AS,2877
+s03a_05,1.0,1. CULMINÓ SUS ESTUDIOS,1918
+s03a_05,5.0,"5. FALTÓ DINERO PARA COMPRAR ÚTILES,ETC.",712
+s03a_05,2.0,2. POR ENFERMEDAD/ACCIDENTE/DISCAPACIDAD,380
+s03a_05,8.0,8. OTRO (Especifique),300
+s03a_05,3.0,3. POR EMBARAZO,179
+s03b_11,,,33203
+s03b_11,1.0,1. VACACIÓN (DESCANSO PEDAGÓGICO/RECESO),6011
+s03b_11,2.0,2. CULMINÓ SUS ESTUDIOS,213
+s03b_11,5.0,5. OTRO (Especifique),32
+s03b_11,3.0,3. POR TRABAJO,25
+s03b_11,4.0,4. POR TRASLADO DE LA FAMILIA,1
+depto,2.0,La Paz,9704
+depto,7.0,Santa Cruz,7309
+depto,3.0,Cochabamba,6555
+depto,5.0,Potosí,3021
+depto,4.0,Oruro,2854
+depto,6.0,Tarija,2800
+depto,1.0,Chuquisaca,2797
+depto,8.0,Beni,2323
+depto,9.0,Pando,2122
+area,1.0,,30173
+area,2.0,,9312
+p0,0.0,No Pobre,21741
+p0,1.0,Pobre,17723
+p0,,,21
+pext0,0.0,No pobre extremo,32981
+pext0,1.0,Pobre extremo,6483
+pext0,,,21

@@ -1,0 +1,15 @@
+
+duckdb
+pandas
+numpy
+pyarrow
+pyreadstat
+plotly
+scikit-learn
+lightgbm
+joblib
+ipykernel
+nbformat
+nbclient
+data-profiling
+openpyxl

@@ -1,0 +1,840 @@
+
+---
+title: "Inasistencia escolar en Bolivia"
+subtitle: "Análisis exploratorio, segmentación y predicción con la Encuesta de Hogares 2025"
+author:
+  - name: "Alfredo Ramos"
+    affiliations:
+      - name: "Universidad Pública de El Alto (UPEA)"
+date: "2026-11-09"
+date-format: "D [de] MMMM [de] YYYY"
+lang: es
+
+abstract: |
+  Este estudio examina la inasistencia escolar de personas de
+  6 a 17 años en Bolivia mediante los microdatos de la Encuesta
+  de Hogares 2025 (EH2025). Se aplicaron procedimientos de
+  integración y consulta con DuckDB, análisis exploratorio,
+  visualización interactiva, segmentación K-Means y aprendizaje
+  automático supervisado.
+
+  El conjunto analítico contiene 9.201 observaciones, de las
+  cuales 208 presentan inasistencia según la definición
+  operativa adoptada. Se observaron diferencias relevantes
+  por edad y área de residencia. En la comparación predictiva,
+  Random Forest superó a LightGBM según la Average Precision
+  media de validación cruzada, aunque ambos modelos mantienen
+  limitaciones para identificar casos individuales.
+
+  Los resultados permiten plantear recomendaciones orientadas
+  al seguimiento educativo de adolescentes, el diagnóstico
+  de barreras territoriales y el acompañamiento familiar.
+
+keywords:
+  - Inasistencia escolar
+  - Bolivia
+  - Encuesta de Hogares 2025
+  - Minería de datos
+  - Machine Learning
+  - Visualización de datos
+  - Random Forest
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-location: left
+    toc-title: "Contenido"
+    toc-depth: 2
+    number-sections: true
+    number-depth: 2
+    smooth-scroll: true
+    page-layout: article
+    title-block-banner: true
+    embed-resources: false
+    fig-responsive: true
+    code-fold: true
+    anchor-sections: true
+    link-external-newwindow: true
+
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+::: {.callout-note title="Información académica" appearance="simple"}
+**Institución:** Universidad Pública de El Alto (UPEA)
+
+**Programa:** Maestría en Inteligencia Artificial, Machine Learning y Data Science
+
+**Módulo:** Minería de Datos y Visualización en la Toma de Decisiones
+
+**Fuente principal:** Instituto Nacional de Estadística de Bolivia, Encuesta de Hogares 2025 (EH2025).
+
+**Tipo de estudio:** Análisis observacional, exploratorio y predictivo.
+:::
+
+# Resumen ejecutivo
+
+La inasistencia escolar representa un desafío para la continuidad
+educativa y la igualdad de oportunidades. Comprender su distribución
+demográfica y territorial puede aportar evidencia para orientar
+investigaciones e intervenciones de política pública.
+
+El presente estudio utiliza microdatos de la **Encuesta de Hogares
+2025 (EH2025)** del Instituto Nacional de Estadística (INE) de Bolivia
+para analizar la situación de personas entre 6 y 17 años.
+
+El procesamiento combinó Python, DuckDB y Pandas. Se desarrollaron
+visualizaciones interactivas con Plotly, una segmentación no
+supervisada mediante K-Means y dos clasificadores supervisados:
+Random Forest y LightGBM.
+
+La base analítica contiene **9.201 observaciones**, pertenecientes
+a **5.437 hogares**. De ellas, **208 fueron clasificadas con
+inasistencia escolar**, equivalentes al **2,26% de la muestra
+sin ponderación**.
+
+Los resultados ponderados muestran una diferencia importante entre
+el área rural (**5,61%**) y el área urbana (**1,49%**). Asimismo,
+se observan tasas superiores durante la adolescencia, alcanzando
+una estimación puntual de **9,41% a los 17 años**.
+
+En la evaluación predictiva, Random Forest obtuvo un AUC-ROC
+de **0,7815** y una Average Precision de **0,0976** en prueba.
+Aunque supera una referencia de clasificación aleatoria, su
+precisión al identificar casos positivos fue de apenas **10,27%**.
+
+Por ello, los resultados deben interpretarse como evidencia
+exploratoria y no como una herramienta lista para adoptar
+decisiones individuales automatizadas.
+
+# Problema de investigación y objetivos
+
+## Contexto del problema
+
+La asistencia escolar puede variar según la edad, el territorio,
+las condiciones del hogar y otros factores contextuales.
+
+La disponibilidad de microdatos permite examinar estas diferencias,
+identificar patrones y evaluar hasta qué punto un conjunto limitado
+de características sociodemográficas permite anticipar la
+clasificación de asistencia o inasistencia.
+
+El enfoque adoptado es observacional. Su propósito no es atribuir
+causas, sino estudiar asociaciones y capacidades predictivas.
+
+## Pregunta de investigación
+
+> ¿Qué características demográficas, territoriales y
+> socioeconómicas se asocian con la inasistencia escolar de
+> personas de 6 a 17 años en Bolivia, y qué desempeño alcanzan
+> los modelos de aprendizaje automático al intentar predecirla?
+
+## Objetivos
+
+**Objetivo general**
+
+Analizar la inasistencia escolar mediante técnicas de minería de
+datos, visualización, segmentación y aprendizaje automático,
+utilizando los microdatos EH2025.
+
+**Objetivos específicos**
+
+1. Construir un conjunto analítico consistente a partir de
+   los módulos de la encuesta.
+2. Describir la inasistencia por edad, área y departamento.
+3. Representar los patrones identificados mediante gráficos
+   interactivos y cartografía departamental.
+4. Identificar perfiles exploratorios utilizando K-Means.
+5. Comparar modelos Random Forest y LightGBM.
+6. Examinar la importancia predictiva de las variables.
+7. Formular recomendaciones sustentadas en los resultados.
+
+# Fuente de datos y metodología
+
+## Procedencia de los microdatos
+
+La fuente principal fue la **Encuesta de Hogares 2025**,
+publicada por el Instituto Nacional de Estadística de Bolivia.
+
+**Catálogo oficial:**
+[Encuesta de Hogares 2025 — INE](https://anda.ine.gob.bo/index.php/catalog/256).
+
+Se trabajó con archivos SPSS (`.sav`), principalmente
+los módulos de personas y viviendas.
+
+La inspección inicial permitió verificar las variables,
+las categorías de respuesta y las claves disponibles
+para integrar los registros.
+
+## Construcción de la base analítica
+
+El flujo de procesamiento comprendió:
+
+1. Lectura y auditoría de los archivos SPSS con Pyreadstat.
+2. Construcción del diccionario de variables.
+3. Conversión de datos a Parquet.
+4. Consulta e integración mediante DuckDB.
+5. Relación de personas y viviendas por `folio`.
+6. Filtrado de personas de 6 a 17 años.
+7. Definición de la variable objetivo.
+8. Exportación del conjunto analítico.
+
+Se comprobó que la clave individual `folio` + `nro`
+no presentaba duplicados y que la integración con viviendas
+no produjo registros sin correspondencia.
+
+## Definición de inasistencia escolar
+
+Se empleó la variable `cmasi` para construir una clasificación
+binaria:
+
+| Categoría | Valor de `cmasi` | Variable objetivo |
+|---|---:|---:|
+| Asistencia | 2 | 0 |
+| No matriculado | 1 | 1 |
+| No asiste | 3 | 1 |
+
+Se conservaron únicamente registros de 6 a 17 años
+con dichas categorías válidas.
+
+::: {.callout-important title="Alcance de la definición" appearance="simple"}
+La variable utilizada combina ausencia de matrícula y
+falta de asistencia. La EH2025 ofrece información transversal,
+por lo que esta clasificación **no debe interpretarse
+automáticamente como abandono escolar o deserción definitiva**.
+:::
+
+## Ponderación de las tasas
+
+Para las comparaciones descriptivas se utilizó el factor
+de expansión `factor`.
+
+La proporción ponderada se calculó como:
+
+$$
+\widehat{p} =
+100\frac{\sum_{i=1}^{n} w_i y_i}
+{\sum_{i=1}^{n} w_i}
+$$
+
+Donde:
+
+- $w_i$ representa el factor de expansión.
+- $y_i$ es la variable binaria de inasistencia.
+- $n$ corresponde al número de observaciones del dominio analizado.
+
+Los porcentajes descriptivos se presentan ponderados.
+Los tamaños muestrales y los recuentos de casos se muestran
+sin ponderación, salvo indicación expresa.
+
+# Calidad de datos y análisis exploratorio
+
+## Composición de la muestra
+
+| Indicador | Resultado |
+|---|---:|
+| Observaciones analizadas | 9.201 |
+| Hogares distintos | 5.437 |
+| Asistencia escolar | 8.993 |
+| Inasistencia escolar | 208 |
+| Proporción positiva no ponderada | 2,26% |
+| Variables predictoras utilizadas | 8 |
+
+La clase positiva es minoritaria, condición que exige
+especial cuidado durante el entrenamiento y la evaluación
+de los clasificadores.
+
+## Revisión de valores faltantes
+
+La preparación de características registró un valor
+faltante en cada una de estas variables:
+
+- Situación de pobreza (`p0`).
+- Pobreza extrema (`pext0`).
+- Ingreso per cápita transformado (`ingreso_log`).
+
+Los demás predictores seleccionados no presentaron
+valores faltantes.
+
+La imputación se realizó dentro de los pipelines
+de modelado, evitando utilizar información del
+conjunto de prueba para ajustar transformaciones.
+
+## Distribución de ingresos
+
+El ingreso per cápita del hogar presenta una distribución
+fuertemente asimétrica, con valores elevados que pueden
+influir en procedimientos de modelado.
+
+Para reducir dicha asimetría se empleó la transformación:
+
+$$
+x'=\ln(1+x)
+$$
+
+Aplicada a ingresos no negativos.
+
+# Distribución territorial de la inasistencia
+
+## Comparación departamental
+
+<div class="visualizacion">
+<iframe
+  src="../outputs/figures/01_inasistencia_departamento.html"
+  title="Tasa de inasistencia escolar por departamento"
+  loading="lazy"
+  height="510">
+</iframe>
+</div>
+
+*Figura 1. Tasas de inasistencia escolar ponderadas por
+departamento. Fuente: elaboración propia con EH2025.*
+
+Las tasas puntuales más elevadas se observaron en:
+
+| Departamento | Tasa ponderada |
+|---|---:|
+| Pando | 5,67% |
+| Santa Cruz | 4,17% |
+| Chuquisaca | 3,90% |
+| La Paz | 2,46% |
+| Tarija | 2,43% |
+
+Pando presenta el valor puntual más elevado. No obstante,
+estas diferencias deben evaluarse con cautela debido
+al número reducido de casos positivos en algunos
+departamentos y a la ausencia de intervalos de confianza
+ajustados por el diseño muestral.
+
+## Comparación urbana y rural
+
+<div class="visualizacion">
+<iframe
+  src="../outputs/figures/02_inasistencia_area.html"
+  title="Inasistencia escolar por área urbana y rural"
+  loading="lazy"
+  height="465">
+</iframe>
+</div>
+
+*Figura 2. Inasistencia escolar ponderada por área de residencia.*
+
+| Área | Tasa estimada |
+|---|---:|
+| Urbana | 1,49% |
+| Rural | 5,61% |
+
+La tasa rural es aproximadamente **3,8 veces** la urbana.
+
+Este contraste constituye una señal relevante para
+investigar posibles diferencias en accesibilidad,
+transporte, continuidad educativa y condiciones
+territoriales, aunque estos mecanismos no fueron
+demostrados directamente por el análisis.
+
+## Mapa geoespacial de Bolivia
+
+<div class="visualizacion visualizacion-mapa">
+<iframe
+  src="../outputs/figures/05_mapa_inasistencia_bolivia.html"
+  title="Mapa interactivo de inasistencia escolar en Bolivia"
+  loading="lazy"
+  height="730">
+</iframe>
+</div>
+
+*Figura 3. Mapa coroplético de las tasas departamentales.
+Indicadores: EH2025, INE. Geometrías departamentales:
+servicio cartográfico público de YPFB.*
+
+El mapa permite explorar visualmente los nueve
+departamentos y consultar la tasa ponderada,
+el tamaño de la muestra y la cantidad de
+casos observados.
+
+La escala representa diferencias en las estimaciones
+puntuales, no niveles de significancia estadística.
+
+# Inasistencia escolar según edad
+
+<div class="visualizacion">
+<iframe
+  src="../outputs/figures/03_inasistencia_edad.html"
+  title="Tasa de inasistencia por edad"
+  loading="lazy"
+  height="465">
+</iframe>
+</div>
+
+*Figura 4. Tasa ponderada de inasistencia por edad simple.*
+
+La distribución por edad sugiere un incremento de la
+inasistencia durante la adolescencia.
+
+Entre los valores puntuales observados destacan:
+
+| Edad | Tasa estimada |
+|---|---:|
+| 12 años | 0,56% |
+| 14 años | 3,39% |
+| 15 años | 4,82% |
+| 16 años | 5,24% |
+| 17 años | 9,41% |
+
+A los 17 años se observa la tasa más elevada
+entre estas edades seleccionadas.
+
+El resultado sugiere la conveniencia de profundizar
+en la transición y permanencia educativa en
+los últimos años de la adolescencia.
+
+# Segmentación no supervisada con K-Means
+
+## Metodología de agrupamiento
+
+Se utilizó K-Means con las siguientes características:
+
+- Edad.
+- Ingreso per cápita transformado.
+- Condición rural o urbana.
+
+Las variables fueron imputadas y estandarizadas antes
+de aplicar el algoritmo.
+
+Se compararon valores de $K$ entre 2 y 6 mediante
+el coeficiente Silhouette.
+
+El mejor resultado correspondió a **K = 2**,
+con un **Silhouette Score de 0,4528**.
+
+## Perfiles identificados
+
+<div class="visualizacion">
+<iframe
+  src="../outputs/figures/04_clustering_perfiles.html"
+  title="Perfiles identificados mediante K-Means"
+  loading="lazy"
+  height="500">
+</iframe>
+</div>
+
+*Figura 5. Distribución de los perfiles de K-Means
+según edad e ingreso mediano.*
+
+| Característica | Cluster 0 | Cluster 1 |
+|---|---:|---:|
+| Observaciones | 6.877 | 2.324 |
+| Edad promedio | 11,69 | 11,45 |
+| Ingreso per cápita mediano | 1.247,26 | 679,17 |
+| Proporción rural | 0,00% | 99,74% |
+| Inasistencia ponderada | 1,49% | 5,60% |
+
+El **Cluster 0** está compuesto por estudiantes
+urbanos y presenta una menor tasa de inasistencia.
+
+El **Cluster 1** agrupa casi exclusivamente
+estudiantes rurales, con menores ingresos
+medianos y una mayor tasa de inasistencia.
+
+::: {.callout-note title="Interpretación del clustering" appearance="simple"}
+La separación está dominada por la condición
+urbana/rural. Por ello, los dos clusters no deben
+presentarse como tipologías socioeconómicas
+completamente independientes del territorio.
+
+El agrupamiento es exploratorio y no demuestra
+relaciones causales.
+:::
+
+# Modelado predictivo supervisado
+
+## Variables predictoras
+
+Se seleccionaron ocho características:
+
+| Variable | Descripción |
+|---|---|
+| `s01a_03` | Edad |
+| `s01a_02` | Sexo |
+| `depto` | Departamento |
+| `area` | Área de residencia |
+| `ingreso_log` | Ingreso per cápita transformado |
+| `p0` | Situación de pobreza |
+| `pext0` | Pobreza extrema |
+| `tipohogar` | Tipo de hogar |
+
+Se excluyeron identificadores y variables que
+revelaran directamente la asistencia escolar.
+
+Las variables categóricas se codificaron mediante
+One-Hot Encoding y los valores faltantes se imputaron
+dentro del pipeline de entrenamiento.
+
+## División de los datos
+
+La partición se realizó respetando la pertenencia
+de las observaciones a sus hogares.
+
+| Conjunto | Observaciones | Casos positivos |
+|---|---:|---:|
+| Entrenamiento | 7.363 | 166 |
+| Prueba | 1.838 | 42 |
+
+La separación por hogares reduce el riesgo
+de fuga de información entre conjuntos.
+
+## Modelos comparados
+
+Se implementaron dos algoritmos:
+
+**Random Forest**
+
+Ensamble de árboles de decisión con ponderación
+de clases y parámetros de regularización.
+
+**LightGBM**
+
+Modelo de gradient boosting basado en árboles,
+con ponderación de clases y restricciones
+sobre la complejidad.
+
+Ambos utilizaron las mismas variables y
+el mismo esquema de preprocesamiento.
+
+## Validación cruzada
+
+Se aplicó `StratifiedGroupKFold` con cuatro
+particiones sobre el conjunto de entrenamiento.
+
+| Métrica media | Random Forest | LightGBM |
+|---|---:|---:|
+| AUC-ROC | **0,7955** | 0,7612 |
+| Average Precision | **0,1465** | 0,1228 |
+| F1-Score | **0,1658** | 0,1373 |
+| Recall | 0,4345 | **0,4829** |
+
+Random Forest presentó la mayor Average Precision
+media y fue seleccionado antes de evaluar
+el conjunto independiente de prueba.
+
+## Resultados finales de prueba
+
+| Métrica | Random Forest | LightGBM |
+|---|---:|---:|
+| AUC-ROC | **0,7815** | 0,7431 |
+| Average Precision | **0,0976** | 0,0972 |
+| Precision | **0,1027** | 0,0649 |
+| Recall | **0,4524** | 0,4048 |
+| F1-Score | **0,1674** | 0,1118 |
+
+Random Forest obtuvo un desempeño superior en
+el conjunto de prueba para las métricas mostradas.
+
+Sin embargo, la **Precision de 10,27%** indica
+que la mayoría de las predicciones positivas
+no correspondieron a casos positivos reales.
+
+La evaluación debe considerar especialmente
+el desbalance de clases.
+
+## Curva ROC
+
+<div class="visualizacion">
+<iframe
+  src="../outputs/figures/06_comparacion_roc.html"
+  title="Comparación de curvas ROC"
+  loading="lazy"
+  height="490">
+</iframe>
+</div>
+
+*Figura 6. Comparación del desempeño discriminativo
+de Random Forest y LightGBM.*
+
+## Curva Precision-Recall
+
+<div class="visualizacion">
+<iframe
+  src="../outputs/figures/07_precision_recall.html"
+  title="Curvas Precision-Recall"
+  loading="lazy"
+  height="490">
+</iframe>
+</div>
+
+*Figura 7. Evaluación de los clasificadores para la
+clase minoritaria.*
+
+La prevalencia positiva en prueba fue de
+aproximadamente **2,29%**.
+
+La Average Precision de Random Forest fue
+**0,0976**, superior a esa referencia,
+pero aún insuficiente para identificar casos
+individuales con alta precisión.
+
+## Matrices de confusión
+
+### Random Forest
+
+<div class="visualizacion">
+<iframe
+  src="../outputs/figures/08_matriz_random_forest.html"
+  title="Matriz de confusión de Random Forest"
+  loading="lazy"
+  height="450">
+</iframe>
+</div>
+
+### LightGBM
+
+<div class="visualizacion">
+<iframe
+  src="../outputs/figures/08_matriz_lightgbm.html"
+  title="Matriz de confusión de LightGBM"
+  loading="lazy"
+  height="450">
+</iframe>
+</div>
+
+Las matrices permiten revisar los errores
+de clasificación y evidencian las dificultades
+para identificar correctamente los casos
+menos frecuentes.
+
+# Interpretabilidad del modelo
+
+## Método utilizado
+
+Se aplicó **Permutation Importance** al
+Random Forest seleccionado.
+
+El procedimiento modifica aleatoriamente
+cada predictor y registra la disminución
+de Average Precision.
+
+No se realizó un nuevo entrenamiento
+durante esta fase.
+
+## Importancia de variables
+
+<div class="visualizacion">
+<iframe
+  src="../outputs/figures/09_importancia_variables.html"
+  title="Importancia de variables por permutación"
+  loading="lazy"
+  height="530">
+</iframe>
+</div>
+
+*Figura 8. Importancia media por permutación
+en el conjunto de prueba.*
+
+| Predictor | Cambio medio de AP |
+|---|---:|
+| Edad | +0,0581 |
+| Área urbana/rural | +0,0318 |
+| Departamento | +0,0315 |
+| Tipo de hogar | +0,0286 |
+| Sexo | +0,0064 |
+| Pobreza | −0,0018 |
+| Pobreza extrema | −0,0063 |
+| Ingreso per cápita (log) | −0,0202 |
+
+La **edad** presenta la mayor contribución
+predictiva positiva, seguida de área,
+departamento y tipo de hogar.
+
+Los valores negativos indican que la
+permutación de esas variables mejoró
+la métrica en esta evaluación concreta.
+
+Esto puede deberse a información redundante,
+ruido o variabilidad del conjunto de prueba.
+
+::: {.callout-warning title="Precaución interpretativa" appearance="simple"}
+La importancia predictiva no equivale a
+importancia causal.
+
+Los resultados de Permutation Importance
+fueron examinados después de la evaluación
+final, sin utilizarlos para reentrenar
+ni seleccionar nuevamente el modelo.
+:::
+
+# Limitaciones del estudio
+
+Los resultados deben interpretarse considerando
+las siguientes limitaciones.
+
+**Diseño transversal.** La encuesta permite
+analizar asociaciones en un momento determinado,
+pero no reconstruir trayectorias completas
+de abandono o reincorporación educativa.
+
+**Clase positiva minoritaria.** Solo 208 registros
+fueron clasificados con inasistencia, y 42
+pertenecen al conjunto de prueba.
+
+**Diseño de encuesta.** Las tasas descriptivas
+utilizan factores de expansión, pero no se
+estimaron intervalos de confianza que incorporen
+conjuntamente conglomerados y estratos.
+
+**Precisión territorial.** Algunas comparaciones
+departamentales pueden ser inestables por el
+número reducido de casos positivos.
+
+**Alcance predictivo.** Los modelos fueron
+evaluados mediante separación por hogares,
+sin incorporar los pesos de encuesta como
+ponderaciones de entrenamiento y evaluación.
+
+**Interpretabilidad.** Permutation Importance
+describe el funcionamiento del modelo,
+no mecanismos causales.
+
+**Generalización.** El desempeño corresponde
+a la muestra y al procedimiento utilizados;
+no demuestra validez para decisiones
+individuales en sistemas educativos reales.
+
+# Recomendaciones de políticas públicas
+
+## Acompañamiento educativo de adolescentes
+
+**Evidencia:** la inasistencia aumenta en
+las edades superiores y la edad es el
+predictor de mayor importancia por permutación.
+
+**Recomendación:** evaluar programas de
+seguimiento y acompañamiento para adolescentes
+de 14 a 17 años, especialmente durante
+transiciones entre niveles educativos.
+
+**Acciones posibles:** tutorías, identificación
+temprana de dificultades escolares y
+articulación con familias y comunidades.
+
+**Condición:** implementar pilotos y evaluar
+su impacto antes de una ampliación.
+
+## Investigación de barreras territoriales rurales
+
+**Evidencia:** la tasa rural estimada
+es de 5,61%, frente a 1,49% en el área urbana.
+
+**Recomendación:** priorizar diagnósticos
+territoriales que permitan identificar
+barreras concretas de acceso y continuidad.
+
+**Aspectos por investigar:** transporte,
+distancia a establecimientos educativos,
+disponibilidad de servicios y condiciones
+de accesibilidad.
+
+**Condición:** no atribuir la brecha
+a una causa específica sin evidencia adicional.
+
+## Fortalecimiento del acompañamiento familiar
+
+**Evidencia:** el tipo de hogar presenta
+una contribución predictiva positiva,
+aunque no establece causalidad.
+
+**Recomendación:** estudiar necesidades
+de apoyo educativo de distintos hogares
+y evaluar mecanismos de acompañamiento
+familiar adaptados al contexto.
+
+**Acciones posibles:** orientación,
+coordinación entre establecimientos y
+familias, y derivación a servicios de apoyo
+cuando corresponda.
+
+**Condición:** evitar estigmatizar
+determinadas estructuras familiares.
+
+# Conclusiones
+
+El análisis de la EH2025 identificó patrones
+descriptivos de inasistencia escolar asociados
+con la edad y el territorio.
+
+Las tasas ponderadas muestran una diferencia
+importante entre áreas rurales y urbanas,
+mientras que las estimaciones por edad
+sugieren mayor inasistencia durante
+la adolescencia.
+
+El clustering K-Means produjo dos perfiles
+principalmente diferenciados por la
+condición urbana o rural.
+
+En el componente supervisado, Random Forest
+obtuvo mejores resultados que LightGBM
+según el criterio de selección establecido.
+
+No obstante, su baja precisión para la clase
+positiva limita su posible aplicación directa
+en decisiones individuales.
+
+La interpretabilidad destacó la edad,
+el área y el departamento como fuentes
+relevantes de información predictiva.
+
+En conjunto, el estudio demuestra la utilidad
+de integrar minería de datos, visualización
+interactiva y aprendizaje automático para
+generar evidencia exploratoria y formular
+preguntas de investigación pública.
+
+# Referencias y reproducibilidad
+
+## Fuentes de información
+
+- **Instituto Nacional de Estadística (INE), Bolivia.**
+  *Encuesta de Hogares 2025*.
+  [Catálogo oficial de microdatos](https://anda.ine.gob.bo/index.php/catalog/256).
+
+- **YPFB.** Servicio público de información geográfica.
+  Capa de límites departamentales utilizada
+  para construir el mapa interactivo.
+
+## Herramientas utilizadas
+
+| Herramienta | Aplicación |
+|---|---|
+| Python | Procesamiento y análisis |
+| Pyreadstat | Lectura de archivos SPSS |
+| DuckDB | Consultas y preparación de datos |
+| Pandas | Transformaciones y agregaciones |
+| Plotly | Visualización interactiva |
+| Scikit-learn | K-Means y Random Forest |
+| LightGBM | Clasificación supervisada |
+| Quarto | Presentación académica HTML5 |
+
+## Reproducibilidad y acceso
+
+La estructura del proyecto incluye:
+
+- `src/`: scripts reproducibles.
+- `data/metadata/`: diccionarios y metadatos.
+- `outputs/figures/`: visualizaciones interactivas.
+- `outputs/models/`: métricas y resultados del modelado.
+- `notebooks/`: documentación analítica en Jupyter.
+- `docs/`: informe académico.
+
+Los microdatos individuales no se redistribuyen
+en el repositorio público. Su acceso debe
+realizarse a través del proveedor oficial
+y de acuerdo con las condiciones aplicables.
+
+---
+
+*Trabajo académico del módulo Minería de Datos y
+Visualización en la Toma de Decisiones. UPEA, 2026.*

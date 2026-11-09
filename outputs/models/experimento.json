@@ -1,0 +1,23 @@
+{
+  "modelo_seleccionado": "Random Forest",
+  "criterio_seleccion": "average_precision_cv",
+  "umbral": 0.5,
+  "random_state": 42,
+  "train_rows": 7363,
+  "test_rows": 1838,
+  "train_positive": 166,
+  "test_positive": 42,
+  "train_households": 4358,
+  "test_households": 1079,
+  "test_prevalence": 0.022850924918389554,
+  "features": [
+    "s01a_03",
+    "s01a_02",
+    "depto",
+    "area",
+    "p0",
+    "pext0",
+    "tipohogar",
+    "ingreso_log"
+  ]
+}

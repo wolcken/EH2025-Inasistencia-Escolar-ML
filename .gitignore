@@ -1,0 +1,143 @@
+
+# ============================================================
+# PROYECTO EH2025 — INASISTENCIA ESCOLAR
+# Git ignore: privacidad, entorno y archivos temporales
+# ============================================================
+
+# ------------------------------------------------------------
+# 1. Entornos virtuales de Python
+# ------------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# ------------------------------------------------------------
+# 2. Caché y archivos temporales de Python
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+.cache/
+*.log
+
+# ------------------------------------------------------------
+# 3. Microdatos originales de la EH2025
+# NO publicar archivos individuales de la encuesta
+# ------------------------------------------------------------
+data/raw/
+*.sav
+*.dta
+*.sas7bdat
+*.por
+*.zsav
+
+# ------------------------------------------------------------
+# 4. Datos procesados y registros individuales
+# ------------------------------------------------------------
+data/processed/
+*.parquet
+*.feather
+*.arrow
+*.duckdb
+*.db
+*.sqlite
+*.sqlite3
+
+# ------------------------------------------------------------
+# 5. Modelos serializados
+# ------------------------------------------------------------
+*.joblib
+*.pkl
+*.pickle
+*.onnx
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+
+# ------------------------------------------------------------
+# 6. Archivos de resultados potencialmente sensibles
+# Mantener únicamente métricas agregadas revisadas
+# ------------------------------------------------------------
+outputs/models/*.joblib
+outputs/models/*.pkl
+
+# ------------------------------------------------------------
+# 7. Jupyter: checkpoints y temporales
+# NO ignorar los notebooks .ipynb
+# ------------------------------------------------------------
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# ------------------------------------------------------------
+# 8. Caché y archivos intermedios de Quarto
+# Mantener los HTML finales y recursos necesarios
+# ------------------------------------------------------------
+.quarto/
+_freeze/
+*_cache/
+docs/.quarto/
+docs/*_cache/
+
+# ------------------------------------------------------------
+# 9. Archivos temporales de editores y sistema operativo
+# ------------------------------------------------------------
+.vscode/*
+!.vscode/extensions.json
+
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ------------------------------------------------------------
+# 10. Variables de entorno, claves y secretos
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
+
+# ------------------------------------------------------------
+# 11. Instaladores y archivos comprimidos
+# ------------------------------------------------------------
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# ------------------------------------------------------------
+# 12. Archivos temporales de Office
+# ------------------------------------------------------------
+~$*
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# ------------------------------------------------------------
+# 13. Directorios de compilación y distribución
+# ------------------------------------------------------------
+build/
+dist/
+*.egg-info/
+.eggs/
+site-packages/

@@ -1,0 +1,494 @@
+﻿archivo,variable,descripcion,tipo
+EH2025_Discriminacion.sav,folio,Id hogar anonimizado,string
+EH2025_Discriminacion.sav,depto,Departamento,double
+EH2025_Discriminacion.sav,area,Urbana Rural,double
+EH2025_Discriminacion.sav,nro,Número de persona,double
+EH2025_Discriminacion.sav,s09a_01a,"En los últimos 12 meses, ¿ha sufrido actos de racismo y/o discrimicación por los siguientes motivos (…)? Color de piel",double
+EH2025_Discriminacion.sav,s09a_01b,"En los últimos 12 meses, ¿ha sufrido actos de racismo y/o discrimicación por los siguientes motivos (…)? Pertenencia a nación pueblo indígena originario campesino o afroboliviano",double
+EH2025_Discriminacion.sav,s09a_01c,"En los últimos 12 meses, ¿ha sufrido actos de racismo y/o discrimicación por los siguientes motivos (…)? Procedencia regional o nacionalidad extranjera",double
+EH2025_Discriminacion.sav,s09a_01d,"En los últimos 12 meses, ¿ha sufrido actos de racismo y/o discrimicación por los siguientes motivos (…)? Orientación sexual e identidad de género",double
+EH2025_Discriminacion.sav,s09a_01e,"En los últimos 12 meses, ¿ha sufrido actos de racismo y/o discrimicación por los siguientes motivos (…)? Edad",double
+EH2025_Discriminacion.sav,s09a_01f,"En los últimos 12 meses, ¿ha sufrido actos de racismo y/o discrimicación por los siguientes motivos (…)? Sexo(hombre, mujer)",double
+EH2025_Discriminacion.sav,s09a_01g,"En los últimos 12 meses, ¿ha sufrido actos de racismo y/o discrimicación por los siguientes motivos (…)? Idioma",double
+EH2025_Discriminacion.sav,s09a_01h,"En los últimos 12 meses, ¿ha sufrido actos de racismo y/o discrimicación por los siguientes motivos (…)? Vestimenta",double
+EH2025_Discriminacion.sav,s09a_01i,"En los últimos 12 meses, ¿ha sufrido actos de racismo y/o discrimicación por los siguientes motivos (…)? Discapacidad",double
+EH2025_Discriminacion.sav,s09a_01j,"En los últimos 12 meses, ¿ha sufrido actos de racismo y/o discrimicación por los siguientes motivos (…)? Religión",double
+EH2025_Discriminacion.sav,s09a_01k,"En los últimos 12 meses, ¿ha sufrido actos de racismo y/o discrimicación por los siguientes motivos (…)? Condición económica o social (pobre, rico)",double
+EH2025_Discriminacion.sav,s09a_01l,"En los últimos 12 meses, ¿ha sufrido actos de racismo y/o discrimicación por los siguientes motivos (…)? Otro motivo",double
+EH2025_Discriminacion.sav,s09a_01le,"En los últimos 12 meses, ¿ha sufrido actos de racismo y/o discrimicación por los siguientes motivos (…)? Otro (Especifique)",string
+EH2025_Discriminacion.sav,s09a_02,¿Presentó una denuncia formal contra el(la) agresor(a) o infractor(a)?,double
+EH2025_Discriminacion.sav,s09a_03_1,"¿Acudió para realizar la denuncia formal a... A. la Policía Boliviana, Ministerio Público o Fiscalía?",double
+EH2025_Discriminacion.sav,s09a_03_2,¿Acudió para realizar la denuncia formal a... B. Defensorías?,double
+EH2025_Discriminacion.sav,s09a_03_3,"¿Acudió para realizar la denuncia formal a... C. Entidades Públicas?(Excluye Policía Boliviana,Ministerio Público o Fiscalía y/o Defensorías)",double
+EH2025_Discriminacion.sav,s09a_03_4,¿Acudió para realizar la denuncia formal a... D. Entidades Privadas?,double
+EH2025_Discriminacion.sav,s09a_03_5,¿Acudió para realizar la denuncia formal a... E. Otros?,double
+EH2025_Discriminacion.sav,s09a_03_5e,¿Acudió para realizar la denuncia formal a... E. Otros? (Especifique)...........,string
+EH2025_Discriminacion.sav,s09a_04,¿Hubo sanción para el(la) agresor(a) o infractor(a)?,double
+EH2025_Discriminacion.sav,s09a_04e,¿Hubo sanción para el(la) agresor(a) o infractor(a)? (Especifique),string
+EH2025_Discriminacion.sav,s09a_05_1,¿No presentó una denuncia formal … A. Por vergüenza?,double
+EH2025_Discriminacion.sav,s09a_05_2,¿No presentó una denuncia formal … B. Porque no quería que se sepa?,double
+EH2025_Discriminacion.sav,s09a_05_3,¿No presentó una denuncia formal … C. Por miedo?,double
+EH2025_Discriminacion.sav,s09a_05_4,¿No presentó una denuncia formal … D. Porque se trató de un hecho sin importancia?,double
+EH2025_Discriminacion.sav,s09a_05_5,¿No presentó una denuncia formal … E. Porque no sabía que podía denunciar?,double
+EH2025_Discriminacion.sav,s09a_05_6,¿No presentó una denuncia formal … F. Porque no sabía dónde denunciar?,double
+EH2025_Discriminacion.sav,s09a_05_7,¿No presentó una denuncia formal … G. Porque no cree en la justicia?,double
+EH2025_Discriminacion.sav,s09a_05_8,¿No presentó una denuncia formal … H. Otro?,double
+EH2025_Discriminacion.sav,s09a_05_8e,¿No presentó una denuncia formal … H. Otro? (Especifique),string
+EH2025_Discriminacion.sav,s09b_01,¿Qué tan segura(o) se siente  caminando sola(o) cerca de su vivienda cuando es de noche?,double
+EH2025_Discriminacion.sav,s09b_02a,"¿En los últimos 12 meses, ¿ha sido victima de (...)? : 1°",double
+EH2025_Discriminacion.sav,s09b_02b,"¿En los últimos 12 meses, ¿ha sido victima de (...)? : 2°",double
+EH2025_Discriminacion.sav,s09b_02e,"¿En los ultimos 12 meses,  ¿ha sido victima de (...)? : (Especifique)",string
+EH2025_Discriminacion.sav,s09b_03,"¿presento/realizó una denuncia formal a instancias correspondientes(Policia, Ministerio Público, etc.?",double
+EH2025_Discriminacion.sav,s09b_04,¿Cuanta confianza le inspira la Policia Boliviana?,double
+EH2025_Discriminacion.sav,upm,Unidad Primaria de Muestreo,string
+EH2025_Discriminacion.sav,estrato,Estrato,string
+EH2025_Discriminacion.sav,ponderador,Ponderador Normalizado Rev2025,double
+EH2025_Equipamiento.sav,folio,Id hogar anonimizado,string
+EH2025_Equipamiento.sav,depto,Departamento,double
+EH2025_Equipamiento.sav,area,Urbana Rural,double
+EH2025_Equipamiento.sav,item,Item,double
+EH2025_Equipamiento.sav,s08c_1,"¿El hogar tiene, posee o dispone...",double
+EH2025_Equipamiento.sav,s08c_2,¿Cuantos/as (...) posee o tiene el hogar?,double
+EH2025_Equipamiento.sav,s08c_3,"¿Hace cuántos años posee, tiene o compró el/la (...)?",double
+EH2025_Equipamiento.sav,s08c_4,¿Cuánto pagó por el/la (...)?,double
+EH2025_Equipamiento.sav,upm,Unidad Primaria de Muestreo,string
+EH2025_Equipamiento.sav,estrato,Estrato,string
+EH2025_Equipamiento.sav,factor,Factor de expansion Rev2025,double
+EH2025_Gastos_Alimentarios.sav,folio,Id hogar anonimizado,string
+EH2025_Gastos_Alimentarios.sav,depto,Departamento,double
+EH2025_Gastos_Alimentarios.sav,area,Urbana Rural,double
+EH2025_Gastos_Alimentarios.sav,producto,Producto,double
+EH2025_Gastos_Alimentarios.sav,s08a_01,"En el último mes, ¿en su hogar compraron, retiraron de su producción/negocio, le regalaron/donaron/otros (...)?",double
+EH2025_Gastos_Alimentarios.sav,s08a_02,¿Con que frecuencia compra (...)?,double
+EH2025_Gastos_Alimentarios.sav,s08a_03a,"Generalmente, ¿qué cantidad de (...) compra ?",double
+EH2025_Gastos_Alimentarios.sav,s08a_03b,"Generalmente, ¿qué cantidad de (...) compra ? Unidad de medida",string
+EH2025_Gastos_Alimentarios.sav,s08a_04,¿Cuanto gasta por comprar esa cantidad de (...)? Valor total (Bs),double
+EH2025_Gastos_Alimentarios.sav,s08a_05,¿Con qué frecuencia retira/separa o saca  (...) de lo que usted produce o vende?,double
+EH2025_Gastos_Alimentarios.sav,s08a_06a,"Generalmente, ¿qué cantidad de (...) retira/separa o saca de lo que usted mismo produce o vende?",double
+EH2025_Gastos_Alimentarios.sav,s08a_06b,"Generalmente, ¿qué cantidad de (...) retira/separa o saca de lo que usted mismo produce o vende? Unidad de medida",string
+EH2025_Gastos_Alimentarios.sav,s08a_07,"Si tuviera que comprar esa cantidad de (...) en el mercado, ¿cuánto pagaría? Valor total (Bs)",double
+EH2025_Gastos_Alimentarios.sav,s08a_08,"¿El hogar recibió (...) en el último mes como pago en especie, trueque, donación o regalo?",double
+EH2025_Gastos_Alimentarios.sav,s08a_09,¿Cuánto pagaría si tuviera que comprar esa cantidad de (...) en el mercado?Valor total (Bs),double
+EH2025_Gastos_Alimentarios.sav,upm,Unidad Primaria de Muestreo,string
+EH2025_Gastos_Alimentarios.sav,estrato,Estrato,string
+EH2025_Gastos_Alimentarios.sav,factor,Factor de expansion Rev2025,double
+EH2025_Gastos_No_Alimentarios.sav,folio,Id hogar anonimizado,string
+EH2025_Gastos_No_Alimentarios.sav,depto,Departamento,double
+EH2025_Gastos_No_Alimentarios.sav,area,Urbana Rural,double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_01,"Durante el último mes, en su hogar cuánto gastaron en: ARTÍCULOS DE LIMPIEZA DEL HOGAR 1. Artículos de limpieza del hogar (detergentes, escobas, servilletas, focos, velas, fósforos, ceras, etc.) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_02,"Durante el último mes, en su hogar cuánto gastaron en: SERVICIOS DE TRANSPORTE PÚBLICO 2. Transporte urbano (micro, taxi, trufi, minibús) (no incluir si el vehículo es para uso laboral) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_03,"Durante el último mes, en su hogar cuánto gastaron en:SERVICIOS Y ARTÍCULOS DE ESPARCIMIENTO Y CULTURA 3. Periódicos, libros y  revistas Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_04,"Durante el último mes, en su hogar cuánto gastaron en: SERVICIOS Y ARTÍCULOS DE ESPARCIMIENTO Y CULTURA 4 Espectáculos (museos, cine, teatro, conciertos, fútbol, alquiler de canchas, etc.) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_05,"Durante el último mes, en su hogar cuánto gastaron en: SERVICIOS Y ARTÍCULOS DE ESPARCIMIENTO Y CULTURA 5. Discos Compactos (CD), Cassetes, DVD, VCD, videos/Blue Ray Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_06,"Durante el último mes, en su hogar cuánto gastaron en: ARTÍCULOS Y SERVICIOS DE USO PERSONAL 6. Artículos de limpieza personal (jaboncillo, pasta dental, champú, cepillo, etc.) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_07,"Durante el último mes, en su hogar cuánto gastaron en: ARTÍCULOS Y SERVICIOS DE USO PERSONAL 7. Toallas higiénicas, pañales desechables, etc. Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_08,"Durante el último mes, en su hogar cuánto gastaron en: ARTÍCULOS Y SERVICIOS DE USO PERSONAL 8. Servicios personales (peluquería, barbería, lustrado de calzados) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_09,"Durante el último mes, en su hogar cuánto gastaron en: SERVICIO DOMÉSTICO 9. Sueldo o pago empleada(o) doméstica(o), chofer, jardinero, lavandera, etc. Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_10,"Durante el último mes, en su hogar cuánto gastaron en: GASTOS MENSUALES EN EDUCACIÓN 10. Pensión escolar, universitaria o cuotas regulares Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_11,"Durante el último mes, en su hogar cuánto gastaron en: GASTOS MENSUALES EN EDUCACIÓN 11. Transporte público o privado al centro educativo (no incluir si el vehículo es para uso laboral) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_12,"Durante el último mes, en su hogar cuánto gastaron en: GASTOS MENSUALES EN EDUCACIÓN 12. Fotocopias, refrigerio o recreo, otros gastos mensuales en Educación Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_13,"Durante el último mes, en su hogar cuánto gastaron en: ALIMENTOS Y BEBIDAS CONSUMIDOS FUERA DEL HOGAR 13. Desayunos fuera del hogar (no incluir si es de su negocio o trabajo) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_14,"Durante el último mes, en su hogar cuánto gastaron en: ALIMENTOS Y BEBIDAS CONSUMIDOS FUERA DEL HOGAR 14. Té (meriendas,snacks, etc.) (no incluir si es de su negocio o trabajo) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_15,"Durante el último mes, en su hogar cuánto gastaron en: ALIMENTOS Y BEBIDAS CONSUMIDOS FUERA DEL HOGAR 15. Cenas fuera del hogar (no incluir si es de su negocio o trabajo) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_16,"Durante el último mes, en su hogar cuánto gastaron en: ALIMENTOS Y BEBIDAS CONSUMIDOS FUERA DEL HOGAR 16. Almuerzos fuera del hogar (no incluir si es de su negocio o trabajo) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_17,"Durante el último mes, en su hogar cuánto gastaron en: ALIMENTOS Y BEBIDAS CONSUMIDOS FUERA DEL HOGAR 17. Helados, caramelos y/o golosinas (no incluir si es de su negocio o trabajo) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_18,"Durante el último mes, en su hogar cuánto gastaron en: ALIMENTOS Y BEBIDAS CONSUMIDOS FUERA DEL HOGAR 18. Sandwiches, hamburguesas, pollos broaster, pizzas, hot dogs, salteñas, empanadas, comida rápida para llevar a domicilio o al paso (no incluir si es de",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_19,"Durante el último mes, en su hogar cuánto gastaron en: ALIMENTOS Y BEBIDAS CONSUMIDOS FUERA DEL HOGAR 19. Cerveza y/u otras bebidas alcohólicas/cigarrillos. (no incluir si es de su negocio o trabajo) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_20,"Durante el último mes, en su hogar cuánto gastaron en: ALIMENTOS Y BEBIDAS CONSUMIDOS FUERA DEL HOGAR 20. Refrescos, sodas, jugos en sachet, botellas, lata y/o cartón. (no incluir si es de su negocio o trabajo) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_21,"Durante el último mes, en su hogar cuánto gastaron en: OTROS GASTOS MENSUALES 21. Transferencias en efectivo a otros hogares (mesadas, asistencia familiar u otros) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_22,"Durante el último mes, en su hogar cuánto gastaron en: OTROS GASTOS MENSUALES 22. Guarderías infantiles, parvularios, niditos Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_23,"Durante el último mes, en su hogar cuánto gastaron en: OTROS GASTOS MENSUALES 23. Combustible y lubricantes para su automóvil y/o motocicleta Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_24,"Durante el último mes, en su hogar cuánto gastaron en: OTROS GASTOS MENSUALES 24. Servicio telefónico celular Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_25,"Durante el último mes, en su hogar cuánto gastaron en: OTROS GASTOS MENSUALES 25. Servicios de Internet domiciliario Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_26,"Durante el último mes, en su hogar cuánto gastaron en: OTROS GASTOS MENSUALES 26. Servicios de Internet usados fuera del hogar Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_27,"Durante el último mes, en su hogar cuánto gastaron en: OTROS GASTOS MENSUALES 27. Servicios de televisión por cable Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_10_28,"Durante el último mes, en su hogar cuánto gastaron en: OTROS GASTOS MENSUALES 28. Servicios de telefonía fija Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_11_01,"Durante los últimos 3 meses, en su hogar cuánto gastaron en: COMUNICACIONES 1. Comunicaciones (cartas, courrier, encomiendas) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_11_02,"Durante los últimos 3 meses, en su hogar cuánto gastaron en: VESTIDOS Y CALZADOS 2. Ropa y calzado para niños y niñas (no incluir uniformes escolares) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_11_03,"Durante los últimos 3 meses, en su hogar cuánto gastaron en: VESTIDOS Y CALZADOS 3. Ropa y calzado para mujer Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_11_04,"Durante los últimos 3 meses, en su hogar cuánto gastaron en: VESTIDOS Y CALZADOS 4. Ropa y calzado para hombre Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_11_05,"Durante los últimos 3 meses, en su hogar cuánto gastaron en: VESTIDOS Y CALZADOS 5. Accesorios de vestir  (carteras, sombreros, billeteras) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_11_06,"Durante los últimos 3 meses, en su hogar cuánto gastaron en: VESTIDOS Y CALZADOS 6. Productos para confección de vestimentas (telas, hilados, lana) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_11_07,"Durante los últimos 3 meses, en su hogar cuánto gastaron en: ARTÍCULOS TEXTILES Y PLÁSTICOS 7. Artículos textiles y de plástico para el hogar (tapices, manteles, frazadas, cortinas, baldes, bañadores, etc.) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_11_08,"Durante los últimos 3 meses, en su hogar cuánto gastaron en: SERVICIOS A HOGARES 8. Servicios a hogares (sastrería, limpieza en seco, reparaciones de calzados, de ropa, etc.) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_12_01,"Durante los últimos 6 meses, en su hogar cuánto gastaron en: GASTOS RELACIONADOS CON EDUCACIÓN 1. Matricula universitaria. Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_12_02,"Durante los últimos 6 meses, en su hogar cuánto gastaron en: REPARACION Y MANTENIMIENTO DE VEHICULOS 2. Servicio y mantenimiento del vehículo propio, motocicleta (no incluir si el vehículo/motocicleta es para uso laboral). Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_12_03,"Durante los últimos 6 meses, en su hogar cuánto gastaron en: PRODUCTOS CONEXOS A LOS ANIMALES DOMESTICOS 3. Alimento para animales, consulta veterinaria, vacunas, curaciones, servicio para el cuidado de la mascota (baño, peluquería) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_13_01,"Durante los últimos 12 meses, en su hogar cuánto gastaron en: EQUIPAMIENTO DEL HOGAR 1. Compra de muebles para el hogar Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_13_02,"Durante los últimos 12 meses, en su hogar cuánto gastaron en: EQUIPAMIENTO DEL HOGAR 2. Vajilla, menaje y utensilios Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_13_03,"Durante los últimos 12 meses, en su hogar cuánto gastaron en: EQUIPAMIENTO DEL HOGAR 3. Electrodómesticos Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_13_04,"Durante los últimos 12 meses, en su hogar cuánto gastaron en: JOYERIA, BISUTERIA Y RELOJERIA 4. Joyería, relojes, aretes, cadenas, prendedores, etc. Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_13_05,"Durante los últimos 12 meses, en su hogar cuánto gastaron en: ARTÍCULOS DE DISTRACCIÓN 5. Juguetes Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_13_06,"Durante los últimos 12 meses, en su hogar cuánto gastaron en: GASTOS FINANCIEROS 6. Cuotas de pago de préstamos hipotecarios (casa,auto) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_13_07,"Durante los últimos 12 meses, en su hogar cuánto gastaron en: GASTOS FINANCIEROS 7. Cuotas de pago por créditos de consumo (compra de electrodómesticos, TV, etc.) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_13_08,"Durante los últimos 12 meses, en su hogar cuánto gastaron en: GASTOS FINANCIEROS 8. Cuotas de pago de tarjetas de crédito (incluya solo cuotas por servicio, emisión o mantenimiento) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_13_09,"Durante los últimos 12 meses, en su hogar cuánto gastaron en: GASTOS ANUALES EN EDUCACÓN 9. Otras matrículas anuales. Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_13_10,"Durante los últimos 12 meses, en su hogar cuánto gastaron en: GASTOS ANUALES EN EDUCACIÓN 10 Uniformes anuales Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_13_11,"Durante los últimos 12 meses, en su hogar cuánto gastaron en: GASTOS ANUALES EN EDUCACIÓN 11. Textos y útiles anuales Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_13_12,"Durante los últimos 12 meses, en su hogar cuánto gastaron en: GASTOS ANUALES EN EDUCACIÓN 12. Aportes o contribuciones a la directiva de padres de familia, a la infraestructura del establecimiento o a pagos de maestros anuales Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_13_13,"Durante los últimos 12 meses, en su hogar cuánto gastaron en: GASTOS ANUALES EN EDUCACIÓN 13. Otros gastos anuales relacionados con la gestión escolar o universitaria? (clases particulares, seminarios, etc.) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_13_14,"Durante los últimos 12 meses, en su hogar cuánto gastaron en: OTROS GASTOS ANUALES 14. Transporte interprovincial/interdepartamental (minibús, flota, avión, etc.) o transporte de mudanza o traslado Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_13_15,"Durante los últimos 12 meses, en su hogar cuánto gastaron en: OTROS GASTOS ANUALES 15. Turismo (gastos de transporte y hospedaje, nacional e internacional) (no incluir viajes por trabajo) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_13_16,"Durante los últimos 12 meses, en su hogar cuánto gastaron en: OTROS GASTOS ANUALES 16. Seguros/Primas de los seguros voluntarios o planes de salud pre-pagados Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_13_17,"Durante los últimos 12 meses, en su hogar cuánto gastaron en: OTROS GASTOS ANUALES 17. Impuestos de vehículos (no incluir si el vehículo es de su negocio) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_13_18,"Durante los últimos 12 meses, en su hogar cuánto gastaron en: OTROS GASTOS ANUALES 18. Impuesto de Bienes inmuebles (de gestiones anteriores) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_13_19,"Durante los últimos 12 meses, en su hogar cuánto gastaron en: OTROS GASTOS ANUALES 19. Gastos legales y en seguros (otros impuestos, minutas,firmas,etc.) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_13_20,"Durante los últimos 12 meses, en su hogar cuánto gastaron en: OTROS GASTOS ANUALES 20. Misceláneos (ceremonias de bautizo, matrimonio, graduación, religiosas, funerales, caridad y donaciones) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,s08b_13_21,"Durante los últimos 12 meses, en su hogar cuánto gastaron en: OTROS GASTOS ANUALES 21. Compra de animales domésticos/mascotas (no incluir animales para consumo, venta o negocio) Valor total (Bs).",double
+EH2025_Gastos_No_Alimentarios.sav,upm,Unidad Primaria de Muestreo,string
+EH2025_Gastos_No_Alimentarios.sav,estrato,Estrato,string
+EH2025_Gastos_No_Alimentarios.sav,factor,Factor de expansion Rev2025,double
+EH2025_Persona.sav,folio,Id hogar anonimizado,string
+EH2025_Persona.sav,area,Urbana Rural,double
+EH2025_Persona.sav,depto,Departamento,double
+EH2025_Persona.sav,nro,Número de persona,double
+EH2025_Persona.sav,s01a_02,¿Es hombre o mujer?,double
+EH2025_Persona.sav,s01a_03,¿Cuántos años cumplidos tiene?,double
+EH2025_Persona.sav,s01a_04a,¿Cuál es la fecha de su nacimiento? Día,double
+EH2025_Persona.sav,s01a_04b,¿Cuál es la fecha de su nacimiento? Mes,double
+EH2025_Persona.sav,s01a_04c,¿Cuál es la fecha de su nacimiento? Año,double
+EH2025_Persona.sav,s01a_05,¿Qué parentesco tiene (...) con la Jefa o Jefe del hogar?,double
+EH2025_Persona.sav,s01a_05a,Su esposa/o compañera/o CODIGO,double
+EH2025_Persona.sav,s01a_05b,Su padre/ padrastro CODIGO,double
+EH2025_Persona.sav,s01a_05c,Su madre/ madrastra CODIGO,double
+EH2025_Persona.sav,s01a_06,En la presente gestión 2024 ¿Principalmente que persona dedicó mas horas al cuidado de (…)?,double
+EH2025_Persona.sav,s01a_07_1,"¿Qué idiomas habla?, según el mayor uso: 1°",double
+EH2025_Persona.sav,s01a_07_2,"¿Qué idiomas habla?, según el mayor uso: 2°",double
+EH2025_Persona.sav,s01a_07_3,"¿Qué idiomas habla?, según el mayor uso: 3°",double
+EH2025_Persona.sav,s01a_08,¿Cuál es el primer idioma o lengua en el que aprendió a hablar en su niñez?,double
+EH2025_Persona.sav,s01a_09,¿Se autoidentifica con alguna nación pueblo indígena originario campesino o afroboliviano?,double
+EH2025_Persona.sav,s01a_09npioc,¿Se autoidentifica con alguna nación pueblo indígena originario campesino o afroboliviano? ¿Con cuál?,double
+EH2025_Persona.sav,s01a_10,¿Cuál es su estado civil o conyugal actual?,double
+EH2025_Persona.sav,s01b_11a,¿Dónde vivía hace 5 años (2020)?,double
+EH2025_Persona.sav,s01b_11b,Especifique el Departamento  dónde vivía hace 5 años (2020),string
+EH2025_Persona.sav,s01b_11c,Especifique la Provincia dónde vivía hace 5 años (2020),string
+EH2025_Persona.sav,s01b_11d,Especifique el Municipio dónde vivía hace 5 años (2020),string
+EH2025_Persona.sav,s01b_11e,Especifique el País dónde vivía hace 5 años (2020),string
+EH2025_Persona.sav,s01b_12,¿Cuál fue la razón por la que dejó ese lugar?,double
+EH2025_Persona.sav,s01b_12e,¿Cuál fue la razón por la que dejó ese lugar? Otra razón (Especifique),string
+EH2025_Persona.sav,s01b_13a,¿Desde qué año y mes vive aquí? Año,double
+EH2025_Persona.sav,s01b_10a,¿Dónde nació?,double
+EH2025_Persona.sav,s01b_13b,¿Desde qué año y mes vive aquí? Mes,double
+EH2025_Persona.sav,s02a_01a,¿Está (...) registrada(o) o afiliada(o) a: 1°,double
+EH2025_Persona.sav,s02a_01b,¿Está (...) registrada(o) o afiliada(o) a: 2°,double
+EH2025_Persona.sav,s02a_01e,¿Está (...) registrada(o) o afiliada(o) a: Otro (Especifique),string
+EH2025_Persona.sav,s02a_02a,"En los últimos 12 meses, por problemas de salud, ¿acudió o se atendió en… A. puesto/centro/hospital de salud público?",double
+EH2025_Persona.sav,s02a_02b,"En los últimos 12 meses, por problemas de salud, ¿acudió o se atendió en… B. Cajas de salud (Caja Nacional de Salud/Caja de la Banca Privada/Caja Petrolera/Banca Estatal/COSSMIL/ Seguro Universitario u otras Cajas)?",double
+EH2025_Persona.sav,s02a_02c,"En los últimos 12 meses, por problemas de salud, ¿acudió o se atendió en… C. consultorio/clínica/hospital de salud privados?",double
+EH2025_Persona.sav,s02a_02d,"En los últimos 12 meses, por problemas de salud, ¿acudió o se atendió en… D. atención médica en domicilio?",double
+EH2025_Persona.sav,s02a_02e,"En los últimos 12 meses, por problemas de salud, ¿acudió o se atendió en… E. servicios de medicina tradicional ancestral?",double
+EH2025_Persona.sav,s02a_02f,"En los últimos 12 meses, por problemas de salud, ¿acudió o se atendió en… F. soluciones caseras?",double
+EH2025_Persona.sav,s02a_02g,"En los últimos 12 meses, por problemas de salud, ¿acudió o se atendió en… G. farmacia sin receta médica (automedicación)?",double
+EH2025_Persona.sav,s02a_02h,"En los últimos 12 meses, por problemas de salud, ¿acudió o se atendió en… H. otro?",double
+EH2025_Persona.sav,s02a_02he,"En los últimos 12 meses, por problemas de salud, ¿acudió o se atendió en… H. otro? (especifique)",string
+EH2025_Persona.sav,s02a_03a,"En los últimos 12 meses, ¿cuánto tuvo que pagar el hogar por los cuidados de salud de (…) por concepto de: A. Servicios médicos por consulta externa:",double
+EH2025_Persona.sav,s02a_03b,"En los últimos 12 meses, ¿cuánto tuvo que pagar el hogar por los cuidados de salud de (…) por concepto de: B. Aparatos:",double
+EH2025_Persona.sav,s02a_03c,"En los últimos 12 meses, ¿cuánto tuvo que pagar el hogar por los cuidados de salud de (…) por concepto de: C. Internación hospitalaria:",double
+EH2025_Persona.sav,s02a_03d,"En los últimos 12 meses, ¿cuánto tuvo que pagar el hogar por los cuidados de salud de (…) por concepto de: D. Exámenes o servicio de ambulancia:",double
+EH2025_Persona.sav,s02a_03e,"En los últimos 12 meses, ¿cuánto tuvo que pagar el hogar por los cuidados de salud de (…) por concepto de: E. Medicinas:",double
+EH2025_Persona.sav,s02a_04a,"¿Tiene (…) dificultad permanente para… A. ver, incluso cuando usa lentes?",double
+EH2025_Persona.sav,s02a_04b,"¿Tiene (…) dificultad permanente para… B. oir, incluso cuando usa audífonos?",double
+EH2025_Persona.sav,s02a_04c,"¿Tiene (…) dificultad permanente para… C. caminar,subir gradas, usar brazos o manos?",double
+EH2025_Persona.sav,s02a_04d,"¿Tiene (…) dificultad permanente para… D. comunicarse, aprender, concentrarse o razonar?",double
+EH2025_Persona.sav,s02a_05,¿(…) fue registrada/o en el Sistema de Información del Programa de Registro Único Nacional de Personas con Discapacidad (SIPRUNPCD) del Ministerio de Salud y Deportes o en el Sistema de Control de Afiliados (SICOA) del Instituto Boliviano de la Ceguera?,double
+EH2025_Persona.sav,s02b_06,¿Está o estuvo alguna vez embarazada?,double
+EH2025_Persona.sav,s02b_06b,¿Está o estuvo alguna vez embarazada? ¿Cuántas veces? (incluyendo el actual embarazo),double
+EH2025_Persona.sav,s02b_07,¿Cuántas hijas e hijos nacidos vivos ha tenido? (aunque después hayan muerto),double
+EH2025_Persona.sav,s02b_08,De ellos ¿Cuántos están vivos actualmente?,double
+EH2025_Persona.sav,s02b_09a,¿En qué mes y año nació su última hija o hijo nacido vivo? (aunque después haya muerto) Mes.,double
+EH2025_Persona.sav,s02b_09b,¿En qué mes y año nació su última hija o hijo nacido vivo? (aunque después haya muerto) Año.,double
+EH2025_Persona.sav,s02b_10,¿Quién atendió su último parto?,double
+EH2025_Persona.sav,s02b_10e,¿Quién atendió su último parto? Especifique.,string
+EH2025_Persona.sav,s02b_11,"En su último embarazo, ¿se ha inscrito al Bono Juana Azurduy (BJA)?",double
+EH2025_Persona.sav,s02b_12a1,"En los últimos 12 meses, ¿cobró usted el Bono Juana Azurduy por: A. Controles prenatales realizados?",double
+EH2025_Persona.sav,s02b_12a2,"En los últimos 12 meses, ¿cobró usted el Bono Juana Azurduy por: A. Controles prenatales realizados? Nº de Controles",double
+EH2025_Persona.sav,s02b_12b,"En los últimos 12 meses, ¿cobró usted el Bono Juana Azurduy por: B. El parto y primer control postparto?",double
+EH2025_Persona.sav,s02b_13,"En su último embarazo, ¿recibió el Subsidio Universal Prenatal por la Vida (Productos con valor de Bs 300)?",double
+EH2025_Persona.sav,s02b_14,"En los últimos 12 meses, ¿recibió el Subsidio Universal Prenatal por la Vida (Productos con valor de Bs 300)?",double
+EH2025_Persona.sav,s02b_14a,"En los últimos 12 meses, ¿recibió el Subsidio Universal Prenatal por la Vida (Productos con valor de Bs 300)¿Cuántos meses?",double
+EH2025_Persona.sav,s02c_15,"Durante este año, ¿(…) asiste o asistió a algún centro infantil que no sea pre kinder ni kinder??",double
+EH2025_Persona.sav,s02d_16,¿Alguna vez inscribieron a (…) al Bono Juana Azurduy?,double
+EH2025_Persona.sav,s02d_17,"En los últimos 12 meses, ¿cobró usted el Bono Juana Azurduy por los controles integrales de salud de (…)?",double
+EH2025_Persona.sav,s02d_17a,"En los últimos 12 meses, ¿cobró usted el Bono Juana Azurduy por los controles integrales de salud de (…)? ¿Cuántos controles cobró?",double
+EH2025_Persona.sav,s03a_01,¿Sabe leer y escribir?,double
+EH2025_Persona.sav,s03a_01a,"¿Es (…) capaz de sumar o multiplicar números, ya sea en papel o mentalmente?",double
+EH2025_Persona.sav,s03a_02a,¿Cuál fue el NIVEL Y CURSO más alto de instrucción que aprobó? Nivel,double
+EH2025_Persona.sav,s03a_02c,¿Cuál fue el NIVEL Y CURSO más alto de instrucción que aprobó? Curso,double
+EH2025_Persona.sav,s03a_03a,Para ingresar a ese nivel ¿Cuál fue el NIVEL Y CURSO anterior de educación que aprobó? Nivel,double
+EH2025_Persona.sav,s03a_03c,Para ingresar a ese nivel ¿Cuál fue el NIVEL Y CURSO anterior de educación que aprobó? Curso,double
+EH2025_Persona.sav,s03a_04,"Durante este año, ¿se inscribió o matriculó en algún curso o grado de educación escolar, alternativa, superior o postgrado?",double
+EH2025_Persona.sav,s03a_05,¿Por qué razón no se inscribió/matriculó? (Indague la razón más importante),double
+EH2025_Persona.sav,s03a_05e,¿Por qué razón no se inscribió/matriculó? (Indague la razón más importante) Especifique.,string
+EH2025_Persona.sav,s03a_06a,"¿A qué NIVEL Y CURSO de educación escolar, alternativa, superior o postgrado se inscribió/matriculó este año? Nivel",double
+EH2025_Persona.sav,s03a_06c,"¿A qué NIVEL Y CURSO de educación escolar, alternativa, superior o postgrado se inscribió/matriculó este año? Curso",double
+EH2025_Persona.sav,s03a_07a,"En esta gestión, ¿recibió Desayuno/ Almuerzo o merienda escolar?",double
+EH2025_Persona.sav,s03a_07b,¿Cuantos meses aproximadamente?,double
+EH2025_Persona.sav,s03a_08,¿Recibió el Bono Juancito Pinto el año pasado (2024)?,double
+EH2025_Persona.sav,s03a_09,El establecimiento en el que se matriculó esta gestión 2025 es:,double
+EH2025_Persona.sav,s03b_10,"Actualmente, ¿(…) pasa clases en el nivel y curso al que se matriculó esta gestión 2025?",double
+EH2025_Persona.sav,s03b_11,"¿Cuál es la principal razón por la que no pasa clases actualmente (ya sea presencial, semipresencial, a distancia o virtual)?",double
+EH2025_Persona.sav,s03b_11e,"¿Cuál es la principal razón por la que no pasa clases actualmente (ya sea presencial, semipresencial, a distancia o virtual)? Otro (Especifique)",string
+EH2025_Persona.sav,s03b_12,"Actualmente, ¿se encuentra en periodo de vacación, descanso pedagógico o receso?",double
+EH2025_Persona.sav,s03c_13,¿(....) dispone de teléfono celular para uso personal?,double
+EH2025_Persona.sav,s03c_13a,¿El teléfono celular puede conectarse a Internet?,double
+EH2025_Persona.sav,s03c_14,"¿En los últimos 3 meses, (....) ha utilizado teléfono celular?",double
+EH2025_Persona.sav,s03c_15a,"¿En los últimos 3 meses, (…) ha utilizado computadora de escritorio, laptop, tablet, en cualquier lugar?",double
+EH2025_Persona.sav,s03c_15b,"¿En los últimos 3 meses, (…) ha utilizado computadora de escritorio, laptop, tablet, en cualquier lugar? ¿Con qué frecuencia?",double
+EH2025_Persona.sav,s03c_16a,"¿En los últimos 3 meses, (…) ha utilizado Internet en cualquier lugar?",double
+EH2025_Persona.sav,s03c_16b,"¿En los últimos 3 meses, (…) ha utilizado Internet en cualquier lugar? ¿Con qué frecuencia?",double
+EH2025_Persona.sav,s03c_17aa,¿Dónde ha utilizado usted internet en los últimos 3 meses? 1°,double
+EH2025_Persona.sav,s03c_17ab,¿Dónde ha utilizado usted internet en los últimos 3 meses? 2°,double
+EH2025_Persona.sav,s03c_17e,¿Dónde ha utilizado usted internet en los últimos 3 meses? Especifique,string
+EH2025_Persona.sav,s04a_01,"Durante la semana pasada, ¿trabajó al menos una hora?",double
+EH2025_Persona.sav,s04a_02,"Durante la semana pasada, dedicó al menos una hora a:",double
+EH2025_Persona.sav,s04a_02a,"Los cultivos agrícolas, cría de animales, caza, pesca o recolección son destinados:",double
+EH2025_Persona.sav,s04a_03,"La semana pasada, ¿tuvo algún empleo, negocio o empresa propia en la cual no trabajó por:",double
+EH2025_Persona.sav,s04a_04,"La semana pasada, ¿quería usted trabajar y estaba disponible para hacerlo?",double
+EH2025_Persona.sav,s04a_05,Durante las últimas cuatro semanas ¿buscó trabajo o hizo gestiones para establecer algún negocio propio?,double
+EH2025_Persona.sav,s04a_06,Es usted:,double
+EH2025_Persona.sav,s04a_06e,Es usted: (Especifique),string
+EH2025_Persona.sav,s04a_07,¿Por qué no buscó trabajo?,double
+EH2025_Persona.sav,s04a_07e,¿Por qué no buscó trabajo? Por otras causas (Especifique),string
+EH2025_Persona.sav,s04a_08,¿Ha trabajado alguna vez anteriormente?,double
+EH2025_Persona.sav,s04b_09a_cod,Cod. COB 2023,string
+EH2025_Persona.sav,s04b_10a_cod,Cod. CAEB 2022,string
+EH2025_Persona.sav,s04b_11aa,"¿Hace cuánto tiempo trabaja en esta empresa, institución, negocio o lugar? Tiempo",double
+EH2025_Persona.sav,s04b_11ab,"¿Hace cuánto tiempo trabaja en esta empresa, institución, negocio o lugar? Periodo",double
+EH2025_Persona.sav,s04b_11ba,"¿Hace cuánto tiempo desempeña esta ocupación en esa empresa, institución, negocio o lugar? Tiempo",double
+EH2025_Persona.sav,s04b_11bb,"¿Hace cuánto tiempo desempeña esta ocupación en esa empresa, institución, negocio o lugar? Periodo",double
+EH2025_Persona.sav,s04b_12,En esta ocupación usted trabaja como,double
+EH2025_Persona.sav,s04b_13,"La administración de la empresa, institución, negocio o lugar donde trabaja es…",double
+EH2025_Persona.sav,s04b_14,"¿Cuántas personas trabajan en la empresa, institución o lugar donde trabaja, incluido usted?",double
+EH2025_Persona.sav,s04b_15,¿Cuántos días a la semana trabaja regularmente en su ocupación?,double
+EH2025_Persona.sav,s04b_16aa,¿Cuántas horas en promedio trabaja al día en su ocupación? HORAS,double
+EH2025_Persona.sav,s04b_16ab,¿Cuántas horas en promedio trabaja al día en su ocupación? MINUTOS,double
+EH2025_Persona.sav,s04c_17a,"¿Cuánto es su salario líquido, excluyendo los descuentos de ley (Gestora/AFP, IVA)? Monto (Bs)",double
+EH2025_Persona.sav,s04c_17b,"¿Cuánto es su salario líquido, excluyendo los descuentos de ley (Gestora/AFP, IVA)? Frecuencia.",double
+EH2025_Persona.sav,s04c_18a,"Durante los últimos doce meses, ¿recibió usted pagos por: A. Bonos laborales o prima de producción?",double
+EH2025_Persona.sav,s04c_18b,"Durante los últimos doce meses, ¿recibió usted pagos por: B. Aguinaldo (Incluir si recibió este beneficio de un empleo anterior)?",double
+EH2025_Persona.sav,s04c_19aa,"Durante los últimos doce meses, ¿recibió usted pagos en efectivo por: A. Comisiones, destajo, propinas, bonos de transporte o refrigerio? Monto (Bs)",double
+EH2025_Persona.sav,s04c_19ab,"Durante los últimos doce meses, ¿recibió usted pagos en efectivo por: A. Comisiones, destajo, propinas, bonos de transporte o refrigerio? Frecuencia de pago:",double
+EH2025_Persona.sav,s04c_19ba,"Durante los últimos doce meses, ¿recibió usted pagos en efectivo por: B. Horas Extras? Monto (Bs)",double
+EH2025_Persona.sav,s04c_19bb,"Durante los últimos doce meses, ¿recibió usted pagos en efectivo por: B. Horas Extras? Frecuencia de pago:",double
+EH2025_Persona.sav,s04c_20a1,"Durante los últimos doce meses, ¿recibió usted: A. Subsidio prenatal o de lactancia (Cajas de Salud)?",double
+EH2025_Persona.sav,s04c_20a2,"Durante los últimos doce meses, ¿recibió usted: A. Subsidio prenatal o de lactancia (Cajas de Salud)? NÚMERO DE MESES",double
+EH2025_Persona.sav,s04c_20b,"Durante los últimos doce meses, ¿recibió usted: B. Bono de natalidad?",double
+EH2025_Persona.sav,s04c_20a_1,¿En su actual ocupación Ud. recibe o recibirá los siguientes beneficios: A. Vacaciones?,double
+EH2025_Persona.sav,s04c_20a_2,¿En su actual ocupación Ud. recibe o recibirá los siguientes beneficios: B. Seguro de salud?,double
+EH2025_Persona.sav,s04c_21a,"Además de los ingresos recibidos en dinero por su trabajo, en los últimos doce meses ¿recibió, usted… A. Alimentos y bebidas para ser consumidos dentro o fuera del lugar de trabajo?",double
+EH2025_Persona.sav,s04c_21a1,"Además de los ingresos recibidos en dinero por su trabajo, en los últimos doce meses ¿recibió, usted… A. Alimentos y bebidas para ser consumidos dentro o fuera del lugar de trabajo? ¿Con qué frecuencia?",double
+EH2025_Persona.sav,s04c_21a2,"Además de los ingresos recibidos en dinero por su trabajo, en los últimos doce meses ¿recibió, usted… A. Alimentos y bebidas para ser consumidos dentro o fuera del lugar de trabajo? (Valorar en Bs)",double
+EH2025_Persona.sav,s04c_21b,"Además de los ingresos recibidos en dinero por su trabajo, en los últimos doce meses ¿recibió, usted… B. Transporte hacia y desde el lugar de su trabajo?",double
+EH2025_Persona.sav,s04c_21b1,"Además de los ingresos recibidos en dinero por su trabajo, en los últimos doce meses ¿recibió, usted… B. Transporte hacia y desde el lugar de su trabajo? ¿Con qué frecuencia?",double
+EH2025_Persona.sav,s04c_21b2,"Además de los ingresos recibidos en dinero por su trabajo, en los últimos doce meses ¿recibió, usted… B. Transporte hacia y desde el lugar de su trabajo? (Valorar en Bs)",double
+EH2025_Persona.sav,s04c_21c,"Además de los ingresos recibidos en dinero por su trabajo, en los últimos doce meses ¿recibió, usted… C. Vestidos y calzados utilizados frecuentemente tanto dentro como fuera de su lugar de trabajo?",double
+EH2025_Persona.sav,s04c_21c1,"Además de los ingresos recibidos en dinero por su trabajo, en los últimos doce meses ¿recibió, usted… C. Vestidos y calzados utilizados frecuentemente tanto dentro como fuera de su lugar de trabajo? ¿Con qué frecuencia?",double
+EH2025_Persona.sav,s04c_21c2,"Además de los ingresos recibidos en dinero por su trabajo, en los últimos doce meses ¿recibió, usted… C. Vestidos y calzados utilizados frecuentemente tanto dentro como fuera de su lugar de trabajo? (Valorar en Bs)",double
+EH2025_Persona.sav,s04c_21d,"Además de los ingresos recibidos en dinero por su trabajo, en los últimos doce meses ¿recibió, usted… D. Vivienda o alojamiento cedido por servicios que pueden ser utilizados por los miembros del hogar?",double
+EH2025_Persona.sav,s04c_21d1,"Además de los ingresos recibidos en dinero por su trabajo, en los últimos doce meses ¿recibió, usted...D. Vivienda o alojamiento cedido por servicios que pueden ser utilizados por los miembros del hogar? ¿Con qué frecuencia?",double
+EH2025_Persona.sav,s04c_21d2,"Además de los ingresos recibidos en dinero por su trabajo, en los últimos doce meses ¿recibió, usted...D. Vivienda o alojamiento cedido por servicios que pueden ser utilizados por los miembros del hogar? (Valorar en Bs)",double
+EH2025_Persona.sav,s04c_21e,"Además de los ingresos recibidos en dinero por su trabajo, en los últimos doce meses ¿recibió, usted… E. Otros, como servicio de guardería, instalaciones deportivas y/o recreativas?",double
+EH2025_Persona.sav,s04c_21e1,"Además de los ingresos recibidos en dinero por su trabajo, en los últimos doce meses ¿recibió, usted...E. Otros, como servicio de guardería, instalaciones deportivas y/o recreativas? ¿Con qué frecuencia?",double
+EH2025_Persona.sav,s04c_21e2,"Además de los ingresos recibidos en dinero por su trabajo, en los últimos doce meses ¿recibió, usted...E. Otros, como servicio de guardería, instalaciones deportivas y/o recreativas? (Valorar en Bs)",double
+EH2025_Persona.sav,s04d_22a,¿Cuánto es su ingreso total en su ocupación principal? Monto (Bs),double
+EH2025_Persona.sav,s04d_22b,¿Cuánto es su ingreso total en su ocupación principal? Frecuencia de ingreso:,double
+EH2025_Persona.sav,s04d_23aa,"Del ingreso total declarado en la pregunta anterior, ¿cuánto utiliza o guarda para… A. Comprar materia prima, materiales o mercadería para su actividad o negocio? Monto (Bs)",double
+EH2025_Persona.sav,s04d_23ab,"Del ingreso total declarado en la pregunta anterior, ¿cuánto utiliza o guarda para… A. Comprar materia prima, materiales o mercadería para su actividad o negocio? Frecuencia de gasto:",double
+EH2025_Persona.sav,s04d_23ba,"Del ingreso total declarado en la pregunta anterior, ¿cuánto utiliza o guarda para… B. Pagar por prestación de servicios a terceros para su actividad o negocio? Monto (Bs)",double
+EH2025_Persona.sav,s04d_23bb,"Del ingreso total declarado en la pregunta anterior, ¿cuánto utiliza o guarda para… B. Pagar por prestación de servicios a terceros para su actividad o negocio? Frecuencia de gasto:",double
+EH2025_Persona.sav,s04d_23ca,"Del ingreso total declarado en la pregunta anterior, ¿cuánto utiliza o guarda para… C. Pagar sueldos, salarios, bonos, gratificaciones, horas extras, Gestora a sus empleados? Monto (Bs)",double
+EH2025_Persona.sav,s04d_23cb,"Del ingreso total declarado en la pregunta anterior, ¿cuánto utiliza o guarda para… C. Pagar sueldos, salarios, bonos, gratificaciones, horas extras, Gestora a sus empleados? Frecuencia de gasto:",double
+EH2025_Persona.sav,s04d_23da,"Del ingreso total declarado en la pregunta anterior, ¿cuánto utiliza o guarda para… D. Pagar alquiler del local/vehiculo que dispone para su actividad o negocio? Monto (Bs)",double
+EH2025_Persona.sav,s04d_23db,"Del ingreso total declarado en la pregunta anterior, ¿cuánto utiliza o guarda para… D. Pagar alquiler del local/vehiculo que dispone para su actividad o negocio? Frecuencia de gasto:",double
+EH2025_Persona.sav,s04d_23ea,"Del ingreso total declarado en la pregunta anterior, ¿cuánto utiliza o guarda para… E. Pagar servicios de agua, luz, gas, teléfono o internet que usa para la actividad o negocio? Monto (Bs)",double
+EH2025_Persona.sav,s04d_23eb,"Del ingreso total declarado en la pregunta anterior, ¿cuánto utiliza o guarda para… E. Pagar servicios de agua, luz, gas, teléfono o internet que usa para la actividad o negocio? Frecuencia de gasto:",double
+EH2025_Persona.sav,s04d_23fa,"Del ingreso total declarado en la pregunta anterior, ¿cuánto utiliza o guarda para… F. Pagar cuotas regulares por concepto de microcrédito/crédito para su actividad o negocio? Monto (Bs)",double
+EH2025_Persona.sav,s04d_23fb,"Del ingreso total declarado en la pregunta anterior, ¿cuánto utiliza o guarda para… F. Pagar cuotas regulares por concepto de microcrédito/crédito para su actividad o negocio? Frecuencia de gasto:",double
+EH2025_Persona.sav,s04d_23ga,"Del ingreso total declarado en la pregunta anterior, ¿cuánto utiliza o guarda para… G. Pagar impuestos, sentajes? Monto (Bs)",double
+EH2025_Persona.sav,s04d_23gb,"Del ingreso total declarado en la pregunta anterior, ¿cuánto utiliza o guarda para… G. Pagar impuestos, sentajes? Frecuencia de gasto:",double
+EH2025_Persona.sav,s04d_23ha,"Del ingreso total declarado en la pregunta anterior, ¿cuánto utiliza o guarda para… H. Pagar cuotas a sindicatos, gremios, asociaciones? Monto (Bs)",double
+EH2025_Persona.sav,s04d_23hb,"Del ingreso total declarado en la pregunta anterior, ¿cuánto utiliza o guarda para… H. Pagar cuotas a sindicatos, gremios, asociaciones? Frecuencia de gasto:",double
+EH2025_Persona.sav,s04d_24a,"Una vez descontadas todas sus obligaciones (sueldos, salarios, compra de material, mercadería, etc.), ¿cuánto le queda para uso del hogar? Monto (Bs)",double
+EH2025_Persona.sav,s04d_24b,"Una vez descontadas todas sus obligaciones (sueldos, salarios, compra de material, mercadería, etc.), ¿cuánto le queda para uso del hogar? Frecuencia de ingreso:",double
+EH2025_Persona.sav,s04d_24ba,"En esta ocupación, de su producción agricola, crianza de animales o sus productos derivados, ¿destinó una parte para alimentación/consumo de su hogar?:",double
+EH2025_Persona.sav,s04d_24bb,"En esta ocupación, de su producción agricola, crianza de animales o sus productos derivados, ¿destinó una parte para alimentación/consumo de su hogar? Frecuencia",double
+EH2025_Persona.sav,s04d_24bc,"En esta ocupación, de su producción agricola, crianza de animales o sus productos derivados, ¿destinó una parte para alimentación/consumo de su hogar? Monto(Bs)",double
+EH2025_Persona.sav,s04e_25,"Además de la actividad mencionada anteriormente, ¿realizó otro trabajo durante la semana pasada?",double
+EH2025_Persona.sav,s04e_26_cod,Cod. CAEB 2022,string
+EH2025_Persona.sav,s04e_27,En esta otra ocupación usted trabaja como:,double
+EH2025_Persona.sav,s04e_28,"La administración de la empresa, institución, negocio o lugar donde trabaja en esta otra ocupación es…",double
+EH2025_Persona.sav,s04e_29,¿Cuántos días a la semana trabaja regularmente en esta otra ocupación?,double
+EH2025_Persona.sav,s04e_30a,¿Cuántas horas en promedio trabaja al día en esta otra ocupación? HORAS,double
+EH2025_Persona.sav,s04e_30b,¿Cuántas horas en promedio trabaja al día en esta otra ocupación? MINUTOS,double
+EH2025_Persona.sav,s04f_31a,"¿Cuánto es su salario líquido en ésta otra ocupación,  excluyendo los descuentos de ley (Gestora/AFP, IVA)?",double
+EH2025_Persona.sav,s04f_31b,"¿Cuánto es su salario líquido en ésta otra ocupación,  excluyendo los descuentos de ley (Gestora/AFP, IVA)? Frecuencia de ingreso:",double
+EH2025_Persona.sav,s04f_32a,"Durante los últimos doce meses, ha recibido: A. ¿Pago por horas extras, bono o prima de producción, aguinaldo?",double
+EH2025_Persona.sav,s04f_32a1,"Durante los últimos doce meses, ha recibido: A. ¿Pago por horas extras, bono o prima de producción, aguinaldo? Monto (Bs)",double
+EH2025_Persona.sav,s04f_32b,"Durante los últimos doce meses, ha recibido: B. ¿Alimentos, transporte, vestimenta?",double
+EH2025_Persona.sav,s04f_32b1,"Durante los últimos doce meses, ha recibido: B. ¿Alimentos, transporte, vestimenta? Monto (Bs)",double
+EH2025_Persona.sav,s04f_32c,"Durante los últimos doce meses, ha recibido: C. ¿Vivienda, alojamiento, otros?",double
+EH2025_Persona.sav,s04f_32c1,"Durante los últimos doce meses, ha recibido: C. ¿Vivienda, alojamiento, otros? Monto (Bs)",double
+EH2025_Persona.sav,s04f_33a,¿Cuánto es su ingreso total en ésta otra ocupación? Monto (Bs),double
+EH2025_Persona.sav,s04f_33b,¿Cuánto es su ingreso total en ésta otra ocupación? Frecuencia de ingreso:,double
+EH2025_Persona.sav,s04f_34a,"Una vez pagadas todas sus obligaciones (sueldos, salarios, compra de materiales, etc.), ¿cuánto le queda para uso del hogar? Monto (Bs)",double
+EH2025_Persona.sav,s04f_34b,"Una vez pagadas todas sus obligaciones (sueldos, salarios, compra de materiales, etc.), ¿cuánto le queda para uso del hogar? Frecuencia de ingreso:",double
+EH2025_Persona.sav,s04f_34ba,"En esta otra ocupación, de su producción agrícola, crianza de animales o sus productos derivados, ¿destinó una parte para alimentación/consumo de su hogar?",double
+EH2025_Persona.sav,s04f_34bb,"En esta otra ocupación, de su producción agrícola, crianza de animales o sus productos derivados, ¿destinó una parte para alimentación/consumo de su hogar? Frecuencia",double
+EH2025_Persona.sav,s04f_34bc,"En esta otra ocupación, de su producción agrícola, crianza de animales o sus productos derivados, ¿destinó una parte para alimentación/consumo de su hogar? Monto(Bs)",double
+EH2025_Persona.sav,s04f_35,¿Está usted afiliada(o) a la Gestora (AFP)?,double
+EH2025_Persona.sav,s04f_36,"Actualmente, ¿está usted aportando a la Gestora?",double
+EH2025_Persona.sav,s05a_01a,Recibe usted ingresos (rentas) por: A. ¿Jubilación (vejez)? Excluya el monto de la Renta Dignidad (MENSUAL),double
+EH2025_Persona.sav,s05a_01b,Recibe usted ingresos (rentas) por: B. ¿Benemérito? Excluya el monto de la Renta Dignidad (MENSUAL),double
+EH2025_Persona.sav,s05a_01c,Recibe usted ingresos (rentas) por: C. ¿Invalidez? (MENSUAL),double
+EH2025_Persona.sav,s05a_01d,"Recibe usted ingresos (rentas) por: D. ¿Viudez, orfandad? (MENSUAL)",double
+EH2025_Persona.sav,s05a_01e,Recibe usted ingresos (rentas) por: E. ¿Renta Dignidad? (MENSUAL),double
+EH2025_Persona.sav,s05a_01e0,Recibe usted ingresos (rentas) mensuales por: E. ¿Renta Dignidad? (MENSUAL) Monto (Bs),double
+EH2025_Persona.sav,s05a_01f,Recibe usted ingresos (rentas) mensuales por: F. ¿Aguinaldo de la Renta Dignidad?,double
+EH2025_Persona.sav,s05a_02a,"Además de los ingresos mencionados, recibe usted ingresos (rentas) mensuales por: A. ¿Intereses? (por depósitos bancarios, préstamos, etc.)",double
+EH2025_Persona.sav,s05a_02b,"Además de los ingresos mencionados, recibe usted ingresos (rentas) mensuales por: B. ¿Alquiler de propiedades inmuebles casas, etc.?",double
+EH2025_Persona.sav,s05a_02c,"Además de los ingresos mencionados, recibe usted ingresos (rentas) mensuales por: C. ¿Otras rentas?",double
+EH2025_Persona.sav,s05a_02ce,"Además de los ingresos mencionados, recibe usted ingresos (rentas) mensuales por: C. ¿Otras rentas? (Especifique)",string
+EH2025_Persona.sav,s05a_03a,"Durante los últimos doce meses, ¿recibió usted: (en montos anuales) A. Alquileres de propiedades agrícolas?",double
+EH2025_Persona.sav,s05a_03b,"Durante los últimos doce meses, ¿recibió usted: (en montos anuales) B. Dividendos, utilidades empresariales o retiros de sociedades?",double
+EH2025_Persona.sav,s05a_03c,"Durante los últimos doce meses, ¿recibió usted: (en montos anuales) C. Alquiler de maquinaria y/o equipo?",double
+EH2025_Persona.sav,s05a_04a,"Además de los ingresos mencionados anteriormente, durante los últimos doce meses, ¿recibió, usted… A. Indemnización por dejar algún trabajo?",double
+EH2025_Persona.sav,s05a_04b,"Además de los ingresos mencionados anteriormente, durante los últimos doce meses, ¿recibió, usted… B. Indemnización de Seguros?",double
+EH2025_Persona.sav,s05a_04c,"Además de los ingresos mencionados anteriormente, durante los últimos doce meses, ¿recibió, usted… C. Ingresos por anticrético de propiedades inmuebles, casas, etc.?",double
+EH2025_Persona.sav,s05a_04d,"Además de los ingresos mencionados anteriormente, durante los últimos doce meses, ¿recibió, usted… D. Otros ingresos extraordinarios (ej. Becas de estudio, derechos de autor, marcas y patentes)?",double
+EH2025_Persona.sav,s05b_05aa,"En los últimos doce meses, ¿recibió usted… A. Asistencia familiar por divorcio o separación? Monto (Bs)",double
+EH2025_Persona.sav,s05b_05ab,"En los últimos doce meses, ¿recibió usted… A. Asistencia familiar por divorcio o separación? Frecuencia",double
+EH2025_Persona.sav,s05b_05ba,"En los últimos doce meses, ¿recibió usted… B. Dinero de otras personas que residen en este u otro lugar del país? Monto (Bs)",double
+EH2025_Persona.sav,s05b_05bb,"En los últimos doce meses, ¿recibió usted… B. Dinero de otras personas que residen en este u otro lugar del país? Frecuencia",double
+EH2025_Persona.sav,s05b_05ca,"En los últimos doce meses, ¿recibió usted… C. Alimentos o regalos de otras personas que residen en este u otro lugar del país? Monto (Bs)",double
+EH2025_Persona.sav,s05b_05cb,"En los últimos doce meses, ¿recibió usted… C. Alimentos o regalos de otras personas que residen en este u otro lugar del país? Frecuencia",double
+EH2025_Persona.sav,s05b_06aa,"En los últimos doce meses, ¿recibió usted… A. Bono de Indigencia por ceguera o Bono mensual para personas por discapacidad? Monto (Bs)",double
+EH2025_Persona.sav,s05b_06ab,"En los últimos doce meses, ¿recibió usted… A. Bono de Indigencia por ceguera o Bono mensual para personas por discapacidad? Frecuencia",double
+EH2025_Persona.sav,s05b_06ae,"En los últimos doce meses, ¿recibió usted… A. Bono de Indigencia por ceguera o Bono mensual para personas por discapacidad? (Especifique)",string
+EH2025_Persona.sav,s05b_06ba,"En los últimos doce meses, ¿recibió usted… B. Otros bonos sociales  en efectivo? Monto (Bs)",double
+EH2025_Persona.sav,s05b_06bb,"En los últimos doce meses, ¿recibió usted… B. Otros bonos sociales  en efectivo? Frecuencia",double
+EH2025_Persona.sav,s05b_06be,"En los últimos doce meses, ¿recibió usted… B. Otros bonos sociales  en efectivo? (Especifique)",string
+EH2025_Persona.sav,s05b_06ca,"En los últimos doce meses, ¿recibió usted… C. Otros bonos sociales en especie? (VALORAR EN BS.) Monto (Bs)",double
+EH2025_Persona.sav,s05b_06cb,"En los últimos doce meses, ¿recibió usted… C. Otros bonos sociales en especie? (VALORAR EN BS.) Frecuencia",double
+EH2025_Persona.sav,s05b_06ce,"En los últimos doce meses, ¿recibió usted… C. Otros bonos sociales en especie? (VALORAR EN BS.) (Especifique)",string
+EH2025_Persona.sav,s05c_07,"En los últimos 12 meses, ¿recibió (...) dinero o encomiendas de otras personas que residen en el exterior del país?",double
+EH2025_Persona.sav,s05c_08,¿Con que frecuencia recibió el dinero o encomiendas mencionadas?,double
+EH2025_Persona.sav,s05c_09a,"Si recibió dinero, ¿cuál es el monto y en qué moneda lo recibió? Monto Bs.",double
+EH2025_Persona.sav,s05c_09b,"Si recibió dinero, ¿cuál es el monto y en qué moneda lo recibió? Moneda",double
+EH2025_Persona.sav,s05c_09be,"Si recibió dinero, ¿cuál es el monto y en qué moneda lo recibió? Moneda (Especifique)",string
+EH2025_Persona.sav,s05c_09aa,"En los últimos 12 meses, principalmente, ¿a través de qué medio recibió remesas ?",double
+EH2025_Persona.sav,s05c_10,"Si recibió en especie, valorar en Bolivianos.",double
+EH2025_Persona.sav,upm,Unidad Primaria de Muestreo,string
+EH2025_Persona.sav,estrato,Estrato,string
+EH2025_Persona.sav,factor,Factor de expansion Rev2025,double
+EH2025_Persona.sav,tipohogar,Tipo de hogar recodificado,double
+EH2025_Persona.sav,niv_ed,Nivel educativo detallado,double
+EH2025_Persona.sav,niv_ed_g,Nivel educativo general,double
+EH2025_Persona.sav,cmasi,Condición de Matriculación y Asistencia,double
+EH2025_Persona.sav,educ_prev,Años de estudio previos,double
+EH2025_Persona.sav,aestudio,Años de estudio,double
+EH2025_Persona.sav,cobersalud,Cobertura de Seguro de Salud,double
+EH2025_Persona.sav,hnv_ult_a,Hijos nacidos vivos en el último año,double
+EH2025_Persona.sav,quienatenparto,Personal de atención del parto,double
+EH2025_Persona.sav,cob_op,Grupo Ocupacional ocupación principal,double
+EH2025_Persona.sav,caeb_op,Clasificación de Actividad Económica de Bolivia Ocupacion principal,double
+EH2025_Persona.sav,caeb_os,Clasificación de Actividad Económica de Bolivia Ocupacion secundaria,double
+EH2025_Persona.sav,pet,Poblacion en edad de trabajar 14 o más años,double
+EH2025_Persona.sav,pea,Poblacion Activa,double
+EH2025_Persona.sav,pei,Poblacion Inactiva,double
+EH2025_Persona.sav,condact,Condicion de Actividad Ocupacion Principal,double
+EH2025_Persona.sav,phrs,Horas trabajadas a la semana Ocupación Principal,double
+EH2025_Persona.sav,shrs,Horas trabajadas a la semana Ocupación Secundaria,double
+EH2025_Persona.sav,tothrs,Horas trabajadas a la semana,double
+EH2025_Persona.sav,yprilab,Ingreso laboral Ocupación Principal (Bs/Mes),double
+EH2025_Persona.sav,yseclab,Ingreso laboral Ocupación Secundaria (Bs/Mes),double
+EH2025_Persona.sav,ylab,Ingreso laboral (Bs/Mes),double
+EH2025_Persona.sav,ynolab,Ingreso no laboral (Bs/Mes),double
+EH2025_Persona.sav,yper,Ingreso personal (Bs/Mes),double
+EH2025_Persona.sav,yhog,Ingreso del hogar (Bs/Mes),double
+EH2025_Persona.sav,yhogpc,Ingreso percápita del hogar (Bs/Mes),double
+EH2025_Persona.sav,z,Línea de pobreza (Bs/persona/mes),double
+EH2025_Persona.sav,zext,Línea de pobreza extrema o de indigencia (bs/persona/mes),double
+EH2025_Persona.sav,p0,Pobreza por ingreso,double
+EH2025_Persona.sav,p1,Brecha de pobreza por ingreso,double
+EH2025_Persona.sav,p2,Magnitud de pobreza por ingreso,double
+EH2025_Persona.sav,pext0,Pobreza extrema o indigencia por ingreso,double
+EH2025_Persona.sav,pext1,Brecha de pobreza extrema por ingreso,double
+EH2025_Persona.sav,pext2,Magnitud de pobreza extrema por ingreso,double
+EH2025_Seguridad_Alimentaria.sav,folio,Id hogar anonimizado,string
+EH2025_Seguridad_Alimentaria.sav,depto,Departamento,double
+EH2025_Seguridad_Alimentaria.sav,area,Urbana Rural,double
+EH2025_Seguridad_Alimentaria.sav,s07a_01,"Durante los últimos 12 meses, alguna vez en su hogar por falta de dinero u otros recursos: ¿Usted o alguna persona en su hogar se ha preocupado por no tener suficientes alimentos para comer?",double
+EH2025_Seguridad_Alimentaria.sav,s07a_02,"Durante los últimos 12 meses, alguna vez en su hogar por falta de dinero u otros recursos: ¿Alguna vez en su hogar no pudieron comer alimentos saludables y nutritivos por falta de dinero u otros recursos?",double
+EH2025_Seguridad_Alimentaria.sav,s07a_03,"Durante los últimos 12 meses, alguna vez en su hogar por falta de dinero u otros recursos: Pensando en los últimos 12 meses, ¿alguna vez en su hogar comieron poca variedad de alimentos por falta de dinero u otros recursos?",double
+EH2025_Seguridad_Alimentaria.sav,s07a_04,"Durante los últimos 12 meses, alguna vez en su hogar por falta de dinero u otros recursos: ¿Alguna vez en su hogar dejaron de desayunar, almorzar o cenar porque no había suficiente dinero u otros recursos?",double
+EH2025_Seguridad_Alimentaria.sav,s07a_05,"Durante los últimos 12 meses, alguna vez en su hogar por falta de dinero u otros recursos: ¿Alguna vez en su hogar comieron menos de lo que deberían comer por falta de dinero u otros recursos?",double
+EH2025_Seguridad_Alimentaria.sav,s07a_06,"Durante los últimos 12 meses, alguna vez en su hogar por falta de dinero u otros recursos: Pensando aún en los últimos 12 meses, ¿alguna vez en su hogar se quedaron sin alimentos por falta de dinero u otros recursos?",double
+EH2025_Seguridad_Alimentaria.sav,s07a_07,"Durante los últimos 12 meses, alguna vez en su hogar por falta de dinero u otros recursos: ¿Alguna vez en su hogar tuvieron hambre, pero no comieron por falta de dinero u otros recursos?",double
+EH2025_Seguridad_Alimentaria.sav,s07a_08,"Durante los últimos 12 meses, alguna vez en su hogar por falta de dinero u otros recursos: ¿Alguna vez en su hogar se quedaron sin comer durante todo el día por falta de dinero u otros recursos?",double
+EH2025_Seguridad_Alimentaria.sav,upm,Unidad Primaria de Muestreo,string
+EH2025_Seguridad_Alimentaria.sav,estrato,Estrato,string
+EH2025_Seguridad_Alimentaria.sav,factor,Factor de expansión Revision 2025,double
+EH2025_Vivienda_1.sav,folio,Id hogar anonimizado,string
+EH2025_Vivienda_1.sav,depto,Departamento,double
+EH2025_Vivienda_1.sav,area,Urbana Rural,double
+EH2025_Vivienda_1.sav,s06a_01,La vivienda es:,double
+EH2025_Vivienda_1.sav,s06a_02,La vivienda que ocupa este hogar es:,double
+EH2025_Vivienda_1.sav,s06a_02e,La vivienda que ocupa el hogar es: ... Otra? (Especifique),string
+EH2025_Vivienda_1.sav,s06a_02a,"Si tuviese que pagar alquiler, ¿cuánto debería pagar mensualmente por concepto de alquiler de esta vivienda?",double
+EH2025_Vivienda_1.sav,s06a_02b,¿Cuánto paga mensualmente por concepto de alquiler de esta vivienda?,double
+EH2025_Vivienda_1.sav,s06a_03,¿Cuál es el material de construcción más utilizado en las paredes de esta vivienda?,double
+EH2025_Vivienda_1.sav,s06a_03e,¿Cuál es el material de construcción más utilizado en las paredes de esta vivienda? OTRO (Especifique),string
+EH2025_Vivienda_1.sav,s06a_04,¿Las paredes interiores de esta vivienda tienen revoque?,double
+EH2025_Vivienda_1.sav,s06a_05,¿Cuál es el material más utilizado en los techos de esta vivienda?,double
+EH2025_Vivienda_1.sav,s06a_05e,¿Cuál es el material más utilizado en los techos de esta vivienda? ...OTRO. (Especifique),string
+EH2025_Vivienda_1.sav,s06a_06,¿Cuál es el material más utilizado en los pisos de esta vivienda?,double
+EH2025_Vivienda_1.sav,s06a_06e,¿Cuál es el material más utilizado en los pisos de esta vivienda? ...OTRO. (Especifique),string
+EH2025_Vivienda_1.sav,s06a_06a_1a,"Durante los ultimos doce meses, usted o alguno de los miembros de su hogar gasto dinero en: 1. Reparacion de techo, paredes, pisos? (Incluye pintado)",double
+EH2025_Vivienda_1.sav,s06a_06a_1b,"Durante los ultimos doce meses, usted o alguno de los miembros de su hogar gasto dinero en: 1. Reparacion de techo, paredes, pisos? (Incluye pintado) Monto en (Bs.) sin centavos",double
+EH2025_Vivienda_1.sav,s06a_06a_2a,"Durante los ultimos doce meses, usted o alguno de los miembros de su hogar gasto dinero en: 2. Reparacion de Servicios Sanitarios, tuberias, pozos?",double
+EH2025_Vivienda_1.sav,s06a_06a_2b,"Durante los ultimos doce meses, usted o alguno de los miembros de su hogar gasto dinero en: 2. Reparacion de servicio sanitario, tuberias, pozos?Monto en (Bs.) sin centavos",double
+EH2025_Vivienda_1.sav,s06a_06a_3a,"Durante los ultimos doce meses, usted o alguno de los miembros de su hogar gasto dinero en: 3. Reparaciones electricas y de seguridad de la vivienda ?",double
+EH2025_Vivienda_1.sav,s06a_06a_3b,"Durante los ultimos doce meses, usted o alguno de los miembros de su hogar gasto dinero en: 3. Reparaciones electricas y de seguridad de la vivienda?Monto en (Bs.) sin centavos",double
+EH2025_Vivienda_1.sav,s06a_06a_4a,"Durante los ultimos doce meses, usted o alguno de los miembros de su hogar realizo algun 4. Otro gasto en reparaciones de su vivienda?",double
+EH2025_Vivienda_1.sav,s06a_06a_4ae,"Durante los ultimos doce meses, usted o alguno de los miembros de su hogar gasto dinero en:4. Otro gasto en reparaciones de su vivienda? (Especifique)",string
+EH2025_Vivienda_1.sav,s06a_06a_4b,"Durante los ultimos doce meses, usted o alguno de los miembros de su hogar gasto dinero en: 4. [s01_a_22_4ae]?Monto en (Bs.) sin centavos",double
+EH2025_Vivienda_1.sav,s06a_06b_1a,"Durante los ultimos doce meses, usted o alguno de los miembros de su hogar gasto dinero en: 1. Construccion y/o ampliacion de cuartos?",double
+EH2025_Vivienda_1.sav,s06a_06b_1b,"Durante los ultimos doce meses, usted o alguno de los miembros de su hogar gasto dinero en: 1. Construccion y/o ampliacion de cuartos? Monto en (Bs.) sin centavos",double
+EH2025_Vivienda_1.sav,s06a_06b_2a,"Durante los ultimos doce meses, usted o alguno de los miembros de su hogar gasto dinero en: 2. construccion de cercas o muros?",double
+EH2025_Vivienda_1.sav,s06a_06b_2b,"Durante los ultimos doce meses, usted o alguno de los miembros de su hogar gasto dinero en: 2. construccion de cercas o muros?Monto en (Bs.) sin centavos",double
+EH2025_Vivienda_1.sav,s06a_06b_3a,"Durante los ultimos doce meses, usted o alguno de los miembros de su hogar gasto dinero en: 3. Colocacion de machihembre, parquet, alfombra, tapizon?",double
+EH2025_Vivienda_1.sav,s06a_06b_3b,"Durante los ultimos doce meses, usted o alguno de los miembros de su hogar gasto dinero en: 3. Colocacion de machihembre, parquet, alfombra, tapizon?Monto en (Bs.) sin centavos",double
+EH2025_Vivienda_1.sav,s06a_06b_4a,"Durante los ultimos doce meses, usted o alguno de los miembros de su hogar gasto dinero en: 4. Colocacion de cortinas?",double
+EH2025_Vivienda_1.sav,s06a_06b_4b,"Durante los ultimos doce meses, usted o alguno de los miembros de su hogar gasto dinero en: 4. Colocacion de cortinas?Monto en (Bs.) sin centavos",double
+EH2025_Vivienda_1.sav,s06a_06b_5a,"Durante los ultimos doce meses, usted o alguno de los miembros de su hogar realizo algun 5. Otro gasto en nuevas construcciones o ampliaciones de su vivienda?",double
+EH2025_Vivienda_1.sav,s06a_06b_5ae,"Durante los ultimos doce meses, usted o alguno de los miembros de su hogar gasto dinero en:5. Otro gasto en nuevas construcciones o ampliaciones de su vivienda? (Especifique)",string
+EH2025_Vivienda_1.sav,s06a_06b_5b,"Durante los ultimos doce meses, usted o alguno de los miembros de su hogar gasto dinero en: 5. Otro gasto [s01_a_23_5ae] en nuevas construcciones o ampliaciones de su vivienda?Monto en (Bs.) sin centavos",double
+EH2025_Vivienda_1.sav,s06a_07,"¿Principalmente ¿el agua que usan en la vivienda, proviene de...",double
+EH2025_Vivienda_1.sav,s06a_07e,"¿Principalmente ¿el agua que usan en la vivienda, proviene de...Otro? (Especifique)",string
+EH2025_Vivienda_1.sav,s06a_08a,"Generalmente, ¿cuántos dias a la semana tiene agua?",double
+EH2025_Vivienda_1.sav,s06a_08b,"Generalmente, ¿cuántas horas al día?",double
+EH2025_Vivienda_1.sav,s06a_08aa,¿Cuánto gastan normalmente en agua para uso del hogar al mes?,double
+EH2025_Vivienda_1.sav,s06a_09,"¿Qué tipo de baño, servicio sanitario o letrina utilizan normalmente los miembros de su hogar",double
+EH2025_Vivienda_1.sav,s06a_10,"¿El baño, servicio sanitario o letrina tiene desagüe…",double
+EH2025_Vivienda_1.sav,s06a_11,"¿El baño, servicio sanitario o letrina es…",double
+EH2025_Vivienda_1.sav,s06a_12,¿Usa energía eléctrica para alumbrar esta vivienda?,double
+EH2025_Vivienda_1.sav,s06a_12a,¿Cuánto gastan normalmente por el servicio de energía eléctrica al mes?,double
+EH2025_Vivienda_1.sav,s06a_13,¿Habitualmente que hace con la basura que genera el hogar?,double
+EH2025_Vivienda_1.sav,s06a_13e,¿Habitualmente que hace con la basura que genera el hogar? Otro. (Especifique),string
+EH2025_Vivienda_1.sav,s06a_13a,"Habitualmente en su hogar, ¿se recicla o separa la basura?",double
+EH2025_Vivienda_1.sav,s06a_13b,¿Qué tipo de basura recicla o separa?,double
+EH2025_Vivienda_1.sav,s06a_13be,¿Qué tipo de basura recicla o separa?  (Especifique),string
+EH2025_Vivienda_1.sav,s06a_14,¿Tiene un cuarto sólo para cocinar?,double
+EH2025_Vivienda_1.sav,s06a_15,Principalmente ¿qué tipo de combustible o energía utiliza para cocinar preparar sus alimentos?,double
+EH2025_Vivienda_1.sav,s06a_15e,Principalmente ¿qué tipo de combustible o energía utiliza para cocinar preparar sus alimentos? 5.OTRO (Especifique),string
+EH2025_Vivienda_1.sav,s06a_15a,¿Cuánto gastan normalmente en el combustible que utiliza para cocinar al mes?,double
+EH2025_Vivienda_1.sav,s06a_16,"¿Cuántos cuartos o habitaciones de esta vivienda ocupa su hogar, sin contar baño, cocina, lavandería, garage, depósito o negocio?",double
+EH2025_Vivienda_1.sav,s06a_17,"De estos cuartos o habitaciones, ¿cuántos usan exclusivamente para dormir?",double
+EH2025_Vivienda_1.sav,s06a_18,¿El hogar dispone de línea telefónica fija?,double
+EH2025_Vivienda_1.sav,s06a_19,¿Tiene el hogar acceso al servicio de internet en su vivienda?,double
+EH2025_Vivienda_1.sav,s06a_20," ¿La conexión a internet es fija, móvil o de ambas?",double
+EH2025_Vivienda_1.sav,s06a_21, El medio de conexión fija es por:,double
+EH2025_Vivienda_1.sav,upm,Unidad Primaria de Muestreo,string
+EH2025_Vivienda_1.sav,estrato,Estrato,string
+EH2025_Vivienda_1.sav,factor,Factor de expansion Rev2025,double
+EH2025_Vivienda_1.sav,totper,Total de personas,double

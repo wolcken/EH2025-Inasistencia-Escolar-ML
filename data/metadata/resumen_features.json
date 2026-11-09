@@ -1,0 +1,27 @@
+{
+  "observaciones": 9201,
+  "variables": [
+    "s01a_03",
+    "s01a_02",
+    "depto",
+    "area",
+    "p0",
+    "pext0",
+    "tipohogar",
+    "ingreso_log"
+  ],
+  "hogares": 5437,
+  "clase_negativa": 8993,
+  "clase_positiva": 208,
+  "porcentaje_positivo": 2.2606,
+  "valores_faltantes": {
+    "s01a_03": 0,
+    "s01a_02": 0,
+    "depto": 0,
+    "area": 0,
+    "p0": 1,
+    "pext0": 1,
+    "tipohogar": 0,
+    "ingreso_log": 1
+  }
+}
