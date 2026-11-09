@@ -1,15 +1,28 @@
 
-duckdb
-pandas
-numpy
-pyarrow
-pyreadstat
-plotly
-scikit-learn
-lightgbm
-joblib
-ipykernel
-nbformat
-nbclient
-data-profiling
-openpyxl
+# Proyecto EH2025 — Inasistencia escolar en Bolivia
+# Entorno de desarrollo: Python 3.14.3
+
+# Procesamiento de datos y consultas SQL
+duckdb==2.0.0
+pandas==2.3.3
+numpy==2.5.4
+pyarrow==26.0.1
+pyreadstat==1.3.7
+openpyxl==3.1.5
+
+# Exploración y perfilado de datos
+fg-data-profiling==4.20.0
+
+# Visualización y geometrías
+plotly==6.3.1
+shapely==2.2.0
+
+# Machine Learning
+scikit-learn==1.9.1
+lightgbm==4.7.0
+joblib==1.6.0
+
+# Notebooks Jupyter
+ipykernel==7.4.0
+nbformat==5.11.1
+nbclient==0.11.0
